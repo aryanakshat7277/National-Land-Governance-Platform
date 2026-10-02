@@ -158,7 +158,7 @@ Report verified by DoLR Analytics Engine (SIH26019)
 
   return (
     <PageTransition>
-      <div className="p-4 lg:p-6 space-y-5 max-w-screen-2xl mx-auto relative overflow-hidden">
+      <div className="p-4 lg:p-6 space-y-5 w-full max-w-[1680px] mx-auto relative overflow-hidden">
 
         {/* Header */}
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">

@@ -142,7 +142,7 @@ Generated via National Digital Platform for Evidence-Based Land Governance (SIH2
     : [];
 
   return (
-    <div className="p-4 lg:p-6 space-y-6 max-w-screen-2xl mx-auto">
+    <div className="p-4 lg:p-6 space-y-6 w-full max-w-[1680px] mx-auto">
 
       {/* Header — 100% Executive Government Light Theme */}
       <div className="relative rounded-2xl overflow-hidden shadow-xs border border-slate-200/90 bg-white">

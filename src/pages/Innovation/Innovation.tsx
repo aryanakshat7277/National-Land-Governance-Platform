@@ -74,7 +74,7 @@ export default function Innovation() {
   };
 
   return (
-    <div className="p-4 lg:p-6 space-y-5 max-w-screen-2xl mx-auto">
+    <div className="p-4 lg:p-6 space-y-5 w-full max-w-[1680px] mx-auto">
 
       {/* Header */}
       <div className="flex items-center justify-between">
