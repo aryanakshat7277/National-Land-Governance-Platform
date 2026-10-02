@@ -58,6 +58,18 @@ export default {
       },
       borderRadius: {
         xl2: '1rem',
+      },
+      fontSize: {
+        '2xs': ['0.75rem', { lineHeight: '1.1rem' }],   // 12px for micro tags
+        'xs':  ['0.875rem', { lineHeight: '1.35rem' }],  // 14px (was 12px)
+        'sm':  ['0.975rem', { lineHeight: '1.45rem' }],  // 15.6px (was 14px)
+        'base':['1.08rem', { lineHeight: '1.65rem' }],   // ~17.3px (was 16px)
+        'lg':  ['1.25rem', { lineHeight: '1.8rem' }],    // 20px (was 18px)
+        'xl':  ['1.45rem', { lineHeight: '2rem' }],     // 23.2px (was 20px)
+        '2xl': ['1.8rem', { lineHeight: '2.3rem' }],     // 28.8px (was 24px)
+        '3xl': ['2.25rem', { lineHeight: '2.7rem' }],    // 36px (was 30px)
+        '4xl': ['2.85rem', { lineHeight: '3.2rem' }],    // ~45.6px (was 36px)
+        '5xl': ['3.5rem', { lineHeight: '3.8rem' }],     // 56px
       }
     },
   },

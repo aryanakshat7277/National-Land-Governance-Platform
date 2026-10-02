@@ -7,6 +7,7 @@ import {
 } from 'lucide-react';
 import { mockHackathons } from '@/data/mockData';
 import toast from 'react-hot-toast';
+import { getAssetUrl } from '@/utils/assets';
 
 const statusConfig = {
   active: { label: 'Active', color: 'bg-green-100 text-green-700 badge', dot: 'bg-green-500' },
@@ -143,17 +144,17 @@ export default function Innovation() {
             return (
               <div key={h.id} className="card flex flex-col overflow-hidden group">
                 {h.coverImage && (
-                  <div className="h-44 w-full relative overflow-hidden bg-slate-100">
+                  <div className="h-48 w-full relative overflow-hidden bg-slate-100">
                     <img 
-                      src={h.coverImage} 
+                      src={getAssetUrl(h.coverImage)} 
                       alt={h.title} 
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20" />
                     <div className="absolute top-3 left-3">
-                      <span className={sc.color}><span className={`w-1.5 h-1.5 rounded-full ${sc.dot} inline-block mr-1.5`} />{sc.label}</span>
+                      <span className={sc.color}><span className={`w-2 h-2 rounded-full ${sc.dot} inline-block mr-1.5`} />{sc.label}</span>
                     </div>
-                    <div className="absolute bottom-2 right-3 text-[#F9E79F] text-xs font-bold bg-black/50 backdrop-blur-sm px-2.5 py-0.5 rounded">
+                    <div className="absolute bottom-2.5 right-3 text-[#F9E79F] text-xs font-bold bg-black/60 backdrop-blur-sm px-3 py-1 rounded-md">
                       Prize: {h.prizePool}
                     </div>
                   </div>
@@ -223,24 +224,24 @@ export default function Innovation() {
         <div className="space-y-5">
           {/* Featured Research Fellowship Banner */}
           <div className="bg-gradient-to-r from-amber-50 via-white to-blue-50 border border-amber-200 rounded-2xl p-6 shadow-sm flex flex-col md:flex-row items-center gap-6">
-            <div className="w-full md:w-56 h-44 rounded-xl overflow-hidden shadow-md border border-amber-200 flex-shrink-0">
+            <div className="w-full md:w-64 h-48 rounded-xl overflow-hidden shadow-md border border-amber-200 flex-shrink-0">
               <img 
-                src="/assets/images/research_grant_award.jpg" 
+                src={getAssetUrl('assets/images/research_grant_award.jpg')} 
                 alt="National Land Governance Research Grant Award" 
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="flex-1 space-y-2">
+            <div className="flex-1 space-y-2.5">
               <div className="flex items-center gap-2">
-                <span className="bg-[#F39C12] text-white text-xs font-bold px-2.5 py-0.5 rounded-full">
+                <span className="bg-[#F39C12] text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
                   Flagship Fellowship
                 </span>
-                <span className="text-xs text-gray-500 font-medium">Department of Science &amp; Technology · MoRD</span>
+                <span className="text-xs sm:text-sm text-slate-500 font-semibold">Department of Science &amp; Technology · MoRD</span>
               </div>
-              <h3 className="text-xl font-bold text-gray-900">
+              <h3 className="text-xl sm:text-2xl font-bold text-slate-900">
                 National Research Grant for Land Governance Excellence 2024–25
               </h3>
-              <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
+              <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
                 Awarded annually to distinguished research fellows, universities, and consortia addressing cadastral modernization, AI land tenure adjudication, and climate resilience planning. Grants up to <strong>₹50 Lakhs</strong> with access to ISRO-NRSC high-resolution satellite imagery.
               </p>
               <div className="flex flex-wrap items-center gap-4 pt-1">

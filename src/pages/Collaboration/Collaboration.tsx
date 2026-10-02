@@ -3,6 +3,7 @@ import { Users, Plus, MessageSquare, FileText, Clock,
   Tag, ChevronRight, Search, Filter, ExternalLink, UserPlus } from 'lucide-react';
 import { mockWorkspaces } from '@/data/mockData';
 import toast from 'react-hot-toast';
+import { getAssetUrl } from '@/utils/assets';
 
 const statusConfig = {
   active: { label: 'Active', color: 'badge-green' },
@@ -149,9 +150,9 @@ export default function Collaboration() {
               <div key={ws.id} className="card-hover flex flex-col overflow-hidden">
                 {/* Visual Workspace Cover Header */}
                 {ws.coverImage && (
-                  <div className="h-36 w-full relative overflow-hidden bg-slate-100">
+                  <div className="h-40 w-full relative overflow-hidden bg-slate-100">
                     <img 
-                      src={ws.coverImage} 
+                      src={getAssetUrl(ws.coverImage)} 
                       alt={ws.title} 
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
@@ -159,7 +160,7 @@ export default function Collaboration() {
                     <div className="absolute top-3 left-3">
                       <span className={statusCfg.color}>{statusCfg.label}</span>
                     </div>
-                    <div className="absolute bottom-2 right-3 text-white text-[11px] font-semibold bg-black/40 backdrop-blur-sm px-2 py-0.5 rounded">
+                    <div className="absolute bottom-2.5 right-3 text-white text-xs font-bold bg-black/60 backdrop-blur-sm px-2.5 py-1 rounded-md">
                       {ws.documentsCount} Research Assets
                     </div>
                   </div>
@@ -321,7 +322,7 @@ export default function Collaboration() {
             {selectedWorkspace.coverImage && (
               <div className="h-44 w-full relative bg-slate-900">
                 <img 
-                  src={selectedWorkspace.coverImage} 
+                  src={getAssetUrl(selectedWorkspace.coverImage)} 
                   alt={selectedWorkspace.title} 
                   className="w-full h-full object-cover opacity-85"
                 />

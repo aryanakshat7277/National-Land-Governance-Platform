@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { X, FileText, Download, Share2, Bookmark, BookOpen, Eye, Award, ExternalLink, Sparkles, Check, Copy } from 'lucide-react';
 import type { Document } from '@/types';
 import toast from 'react-hot-toast';
+import { getAssetUrl } from '@/utils/assets';
 
 interface DocumentModalProps {
   doc: Document | null;
@@ -129,55 +130,55 @@ Policy Innovation, and Evidence-Based Land Governance under Problem ID SIH26019.
                   {doc.type}
                 </span>
                 {doc.isAIIndexed && (
-                  <span className="flex items-center gap-1 px-2.5 py-1 text-xs font-medium bg-[#1E8449]/10 text-[#1E8449] rounded-md">
-                    <Sparkles className="w-3 h-3" />
+                  <span className="flex items-center gap-1.5 px-3 py-1.5 text-xs sm:text-sm font-bold bg-[#1E8449]/10 text-[#1E8449] rounded-lg">
+                    <Sparkles className="w-3.5 h-3.5" />
                     AI Indexed
                   </span>
                 )}
               </div>
 
-              <h1 className="text-2xl font-bold text-slate-900 mb-4">{doc.title}</h1>
+              <h1 className="text-2xl sm:text-3xl font-black text-slate-900 mb-4 leading-tight">{doc.title}</h1>
 
               <div className="space-y-3 mb-6">
-                <div className="flex text-sm">
-                  <span className="w-24 text-slate-500 font-medium">Author</span>
-                  <span className="text-slate-800 flex-1">{doc.author}</span>
+                <div className="flex text-base">
+                  <span className="w-28 text-slate-500 font-semibold">Author</span>
+                  <span className="text-slate-800 font-medium flex-1">{doc.author}</span>
                 </div>
-                <div className="flex text-sm">
-                  <span className="w-24 text-slate-500 font-medium">Organization</span>
-                  <span className="text-slate-800 flex-1">{doc.organization}</span>
+                <div className="flex text-base">
+                  <span className="w-28 text-slate-500 font-semibold">Organization</span>
+                  <span className="text-slate-800 font-medium flex-1">{doc.organization}</span>
                 </div>
-                <div className="flex text-sm">
-                  <span className="w-24 text-slate-500 font-medium">Published</span>
-                  <span className="text-slate-800 flex-1">
+                <div className="flex text-base">
+                  <span className="w-28 text-slate-500 font-semibold">Published</span>
+                  <span className="text-slate-800 font-medium flex-1">
                     {new Date(doc.publishedAt).toLocaleDateString('en-IN', {
                       year: 'numeric', month: 'long', day: 'numeric'
                     })}
                   </span>
                 </div>
                 {doc.doi && (
-                  <div className="flex text-sm">
-                    <span className="w-24 text-slate-500 font-medium">DOI</span>
-                    <a href={`https://doi.org/${doc.doi}`} target="_blank" rel="noopener noreferrer" className="text-[#1A5276] hover:underline flex items-center gap-1">
+                  <div className="flex text-base">
+                    <span className="w-28 text-slate-500 font-semibold">DOI</span>
+                    <a href={`https://doi.org/${doc.doi}`} target="_blank" rel="noopener noreferrer" className="text-[#1A5276] font-semibold hover:underline flex items-center gap-1">
                       {doc.doi}
-                      <ExternalLink className="w-3 h-3" />
+                      <ExternalLink className="w-3.5 h-3.5" />
                     </a>
                   </div>
                 )}
               </div>
 
               <div className="mb-6">
-                <h3 className="text-sm font-semibold text-slate-800 mb-2">Abstract</h3>
-                <p className="text-sm text-slate-600 leading-relaxed text-justify">
+                <h3 className="text-base font-bold text-slate-800 mb-2">Abstract</h3>
+                <p className="text-base text-slate-700 leading-relaxed text-justify">
                   {doc.abstract}
                 </p>
               </div>
 
               <div className="mb-6">
-                <h3 className="text-sm font-semibold text-slate-800 mb-2">Tags</h3>
+                <h3 className="text-base font-bold text-slate-800 mb-2">Tags</h3>
                 <div className="flex flex-wrap gap-2">
                   {doc.tags.map(tag => (
-                    <span key={tag} className="px-2 py-1 text-xs bg-slate-200 text-slate-700 rounded">
+                    <span key={tag} className="px-3 py-1 text-sm font-medium bg-slate-200 text-slate-800 rounded-md">
                       {tag}
                     </span>
                   ))}
@@ -185,20 +186,20 @@ Policy Innovation, and Evidence-Based Land Governance under Problem ID SIH26019.
               </div>
 
               <div className="grid grid-cols-3 gap-4 mb-8">
-                <div className="bg-white p-3 rounded-lg border border-slate-100 flex flex-col items-center justify-center">
+                <div className="bg-white p-3.5 rounded-xl border border-slate-200 flex flex-col items-center justify-center shadow-xs">
                   <Eye className="w-5 h-5 text-[#1A5276] mb-1" />
-                  <span className="text-lg font-semibold text-slate-800">{doc.views.toLocaleString()}</span>
-                  <span className="text-xs text-slate-500">Views</span>
+                  <span className="text-xl font-black text-slate-800">{doc.views.toLocaleString()}</span>
+                  <span className="text-sm font-medium text-slate-500">Views</span>
                 </div>
-                <div className="bg-white p-3 rounded-lg border border-slate-100 flex flex-col items-center justify-center">
+                <div className="bg-white p-3.5 rounded-xl border border-slate-200 flex flex-col items-center justify-center shadow-xs">
                   <Download className="w-5 h-5 text-[#1E8449] mb-1" />
-                  <span className="text-lg font-semibold text-slate-800">{doc.downloads.toLocaleString()}</span>
-                  <span className="text-xs text-slate-500">Downloads</span>
+                  <span className="text-xl font-black text-slate-800">{doc.downloads.toLocaleString()}</span>
+                  <span className="text-sm font-medium text-slate-500">Downloads</span>
                 </div>
-                <div className="bg-white p-3 rounded-lg border border-slate-100 flex flex-col items-center justify-center">
+                <div className="bg-white p-3.5 rounded-xl border border-slate-200 flex flex-col items-center justify-center shadow-xs">
                   <Award className="w-5 h-5 text-[#F39C12] mb-1" />
-                  <span className="text-lg font-semibold text-slate-800">{doc.citations.toLocaleString()}</span>
-                  <span className="text-xs text-slate-500">Citations</span>
+                  <span className="text-xl font-black text-slate-800">{doc.citations.toLocaleString()}</span>
+                  <span className="text-sm font-medium text-slate-500">Citations</span>
                 </div>
               </div>
 
@@ -206,21 +207,21 @@ Policy Innovation, and Evidence-Based Land Governance under Problem ID SIH26019.
               <div className="grid grid-cols-2 gap-3 mb-8">
                 <button 
                   onClick={handleDownloadDoc}
-                  className="flex items-center justify-center gap-2 bg-[#1A5276] text-white py-2.5 rounded-lg hover:bg-[#1A5276]/90 transition-colors font-medium shadow-sm text-xs sm:text-sm"
+                  className="flex items-center justify-center gap-2 bg-[#1A5276] text-white py-3 rounded-xl hover:bg-[#1A5276]/90 transition-colors font-bold shadow-sm text-sm sm:text-base"
                 >
                   <Download className="w-4 h-4" />
                   Download PDF
                 </button>
                 <button 
                   onClick={() => setShowCitation(!showCitation)}
-                  className={`flex items-center justify-center gap-2 border py-2.5 rounded-lg transition-colors font-medium shadow-sm text-xs sm:text-sm ${showCitation ? 'bg-blue-50 border-[#1A5276] text-[#1A5276]' : 'bg-white border-slate-200 text-slate-700 hover:bg-slate-50'}`}
+                  className={`flex items-center justify-center gap-2 border py-3 rounded-xl transition-colors font-bold shadow-sm text-sm sm:text-base ${showCitation ? 'bg-blue-50 border-[#1A5276] text-[#1A5276]' : 'bg-white border-slate-200 text-slate-700 hover:bg-slate-50'}`}
                 >
                   <BookOpen className="w-4 h-4" />
                   Cite
                 </button>
                 <button 
                   onClick={handleShare}
-                  className="flex items-center justify-center gap-2 bg-white border border-slate-200 text-slate-700 py-2.5 rounded-lg hover:bg-slate-50 transition-colors font-medium shadow-sm text-xs sm:text-sm"
+                  className="flex items-center justify-center gap-2 bg-white border border-slate-200 text-slate-700 py-3 rounded-xl hover:bg-slate-50 transition-colors font-bold shadow-sm text-sm sm:text-base"
                 >
                   <Share2 className="w-4 h-4" />
                   Share Link
@@ -364,7 +365,7 @@ Policy Innovation, and Evidence-Based Land Governance under Problem ID SIH26019.
                     <div className="flex flex-col items-center">
                       <div className="rounded-lg shadow-lg border border-slate-200 overflow-hidden max-w-md w-full bg-white mb-6">
                         <img 
-                          src={doc.coverImage} 
+                          src={getAssetUrl(doc.coverImage)} 
                           alt={doc.title} 
                           className="w-full h-auto object-contain max-h-[500px]"
                         />

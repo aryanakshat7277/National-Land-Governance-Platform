@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Eye, EyeOff, LogIn, Map, Shield, ChevronRight } from 'lucide-react';
 import toast from 'react-hot-toast';
+import { getAssetUrl } from '@/utils/assets';
 
 const roleOptions = [
   { value: 'public', label: '🌐 Public User', desc: 'Browse & search repository' },
@@ -79,18 +80,18 @@ export default function Login() {
           </div>
 
           {/* Bhoomi Digital RoR Card Visual Thumbnail */}
-          <div className="bg-white/10 backdrop-blur-md rounded-xl p-3.5 border border-white/20 flex items-center gap-4 max-w-md">
+          <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/20 flex items-center gap-4 max-w-md">
             <img 
-              src="/assets/images/secure_bhoomi_card.svg" 
+              src={getAssetUrl('assets/images/secure_bhoomi_card.svg')} 
               alt="SVAMITVA Property Card" 
-              className="w-14 h-18 object-contain bg-white rounded shadow-sm p-1"
+              className="w-16 h-20 object-contain bg-white rounded-lg shadow-sm p-1"
             />
-            <div className="text-xs">
-              <span className="bg-[#1E8449] text-white text-[10px] font-bold px-2 py-0.5 rounded">
+            <div>
+              <span className="bg-[#1E8449] text-white text-xs font-bold px-2.5 py-0.5 rounded">
                 DigiLocker Certified
               </span>
-              <p className="font-bold text-white mt-1">SVAMITVA Cryptographic Title Deed</p>
-              <p className="text-blue-200 text-[11px]">Instant Single-Sign-On (SSO) for Revenue Officers &amp; Researchers</p>
+              <p className="font-bold text-white text-sm mt-1">SVAMITVA Cryptographic Title Deed</p>
+              <p className="text-blue-100 text-xs mt-0.5 leading-snug">Instant Single-Sign-On (SSO) for Revenue Officers &amp; Researchers</p>
             </div>
           </div>
         </div>

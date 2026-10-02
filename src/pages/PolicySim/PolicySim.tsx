@@ -8,6 +8,7 @@ import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend, Cell
 } from 'recharts';
 import toast from 'react-hot-toast';
+import { getAssetUrl } from '@/utils/assets';
 
 const reformTypes = [
   'Land Record Digitization',
@@ -164,23 +165,23 @@ Generated via National Digital Platform for Evidence-Based Land Governance (SIH2
             <h1 className="text-2xl sm:text-3xl font-black text-slate-900 leading-tight">
               National Policy Simulation &amp; Decision Support Lab
             </h1>
-            <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
               Ex-ante algorithmic impact simulation modeling statutory reforms across land records, dispute litigation, agricultural land consolidation, and fiscal revenue before national gazette rollout.
             </p>
           </div>
 
-          <div className="flex items-center gap-3 bg-slate-50 p-3 rounded-xl border border-slate-200 self-start md:self-auto shadow-xs">
+          <div className="flex items-center gap-3.5 bg-slate-50 p-3.5 rounded-xl border border-slate-200 self-start md:self-auto shadow-xs">
             <img 
-              src="/assets/images/policy_sim_center.jpg" 
+              src={getAssetUrl('assets/images/policy_sim_center.jpg')} 
               alt="Policy Command Room" 
-              className="w-20 h-16 object-cover rounded-lg shadow-xs border border-slate-200"
+              className="w-24 h-20 object-cover rounded-lg shadow-xs border border-slate-200"
             />
-            <div className="text-xs">
-              <p className="font-bold text-slate-900">New Delhi Command Room</p>
-              <p className="text-slate-500 font-medium">18 State Models Online</p>
-              <div className="flex items-center gap-1.5 mt-1">
-                <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                <span className="text-[10px] text-emerald-700 font-bold">Active Compute Sandbox</span>
+            <div>
+              <p className="font-bold text-slate-900 text-sm">New Delhi Command Room</p>
+              <p className="text-slate-600 font-medium text-xs">18 State Models Online</p>
+              <div className="flex items-center gap-1.5 mt-1.5">
+                <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse" />
+                <span className="text-xs text-emerald-700 font-bold">Active Compute Sandbox</span>
               </div>
             </div>
           </div>

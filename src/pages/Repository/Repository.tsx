@@ -19,6 +19,7 @@ import { mockDocuments } from '@/data/mockData';
 import { DocumentModal } from '@/components/ui/DocumentModal';
 import type { Document } from '@/types';
 import toast from 'react-hot-toast';
+import { getAssetUrl } from '@/utils/assets';
 
 export function Repository() {
   const [docsList, setDocsList] = useState<Document[]>(mockDocuments as Document[]);
@@ -70,7 +71,7 @@ export function Repository() {
       downloads: 0,
       citations: 0,
       isAIIndexed: true,
-      coverImage: '/assets/images/cover_dilrmp_study.jpg',
+      coverImage: getAssetUrl('assets/images/cover_dilrmp_study.jpg'),
     };
     setDocsList([newDoc, ...docsList]);
     setIsUploadModalOpen(false);
@@ -114,13 +115,13 @@ export function Repository() {
         
         {/* Thumbnail preview for standard cards */}
         {!featured && doc.coverImage && (
-          <div className="h-32 w-full bg-slate-50 border-b border-slate-100 overflow-hidden relative flex items-center justify-center p-2">
+          <div className="h-36 w-full bg-slate-50 border-b border-slate-100 overflow-hidden relative flex items-center justify-center p-2">
             <img 
-              src={doc.coverImage} 
+              src={getAssetUrl(doc.coverImage)} 
               alt={doc.title} 
               className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300"
             />
-            <div className="absolute top-2 right-2 bg-black/60 backdrop-blur-sm text-white text-[10px] font-semibold px-2 py-0.5 rounded">
+            <div className="absolute top-2 right-2 bg-black/70 backdrop-blur-sm text-white text-xs font-bold px-2 py-0.5 rounded">
               Verified Scan
             </div>
           </div>
@@ -129,12 +130,12 @@ export function Repository() {
         <div className={`p-5 flex-1 flex flex-col ${featured ? 'md:w-7/12' : ''}`}>
           <div className="flex justify-between items-start mb-3">
             <div className="flex flex-wrap gap-2">
-              <span className="px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider rounded text-white" style={{ backgroundColor: color }}>
+              <span className="px-3 py-1 text-xs font-bold uppercase tracking-wider rounded text-white" style={{ backgroundColor: color }}>
                 {doc.type}
               </span>
               {doc.isAIIndexed && (
-                <span className="flex items-center gap-1 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider rounded bg-indigo-100 text-indigo-700">
-                  <Sparkles className="w-3 h-3" />
+                <span className="flex items-center gap-1.5 px-3 py-1 text-xs font-bold uppercase tracking-wider rounded bg-indigo-100 text-indigo-700">
+                  <Sparkles className="w-3.5 h-3.5" />
                   AI Indexed
                 </span>
               )}
@@ -143,36 +144,36 @@ export function Repository() {
             <div className="opacity-0 group-hover:opacity-100 transition-opacity">
               <button 
                 onClick={(e) => { e.stopPropagation(); setSelectedDoc(doc); }}
-                className="flex items-center gap-1 text-xs font-medium text-[#1A5276] bg-blue-50 px-2.5 py-1 rounded hover:bg-blue-100 border border-blue-200"
+                className="flex items-center gap-1.5 text-sm font-bold text-[#1A5276] bg-blue-50 px-3 py-1.5 rounded-lg hover:bg-blue-100 border border-blue-200"
               >
-                <Eye className="w-3.5 h-3.5" /> Read
+                <Eye className="w-4 h-4" /> Read
               </button>
             </div>
           </div>
 
-          <h3 className={`font-bold text-slate-800 mb-2 group-hover:text-[#1A5276] transition-colors ${featured ? 'text-2xl leading-snug' : 'text-base line-clamp-2'}`}>
+          <h3 className={`font-bold text-slate-900 mb-2 group-hover:text-[#1A5276] transition-colors ${featured ? 'text-2xl sm:text-3xl leading-snug' : 'text-lg line-clamp-2'}`}>
             {doc.title}
           </h3>
           
-          <p className="text-sm text-slate-500 mb-4 line-clamp-2 flex-1">
+          <p className="text-base text-slate-600 mb-4 line-clamp-2 flex-1 leading-relaxed">
             {doc.abstract}
           </p>
 
           <div className="mt-auto">
-            <div className="flex items-center gap-4 text-xs text-slate-500 mb-3">
-              <span className="flex items-center gap-1 font-medium text-slate-700"><FileText className="w-3.5 h-3.5" /> {doc.author}</span>
-              <span className="flex items-center gap-1"><Clock className="w-3.5 h-3.5" /> {new Date(doc.publishedAt).getFullYear()}</span>
+            <div className="flex items-center gap-4 text-sm text-slate-600 mb-3">
+              <span className="flex items-center gap-1 font-semibold text-slate-800"><FileText className="w-4 h-4" /> {doc.author}</span>
+              <span className="flex items-center gap-1"><Clock className="w-4 h-4" /> {new Date(doc.publishedAt).getFullYear()}</span>
             </div>
             
             <div className="flex items-center justify-between pt-3 border-t border-slate-100">
-              <div className="flex items-center gap-3">
-                <span className="flex items-center gap-1 text-xs text-slate-600"><Eye className="w-3.5 h-3.5 text-slate-400" /> {doc.views.toLocaleString()}</span>
-                <span className="flex items-center gap-1 text-xs text-slate-600 font-semibold text-[#1E8449]"><Download className="w-3.5 h-3.5" /> {doc.downloads.toLocaleString()}</span>
+              <div className="flex items-center gap-4">
+                <span className="flex items-center gap-1 text-sm font-medium text-slate-700"><Eye className="w-4 h-4 text-slate-400" /> {doc.views.toLocaleString()}</span>
+                <span className="flex items-center gap-1 text-sm text-[#1E8449] font-bold"><Download className="w-4 h-4" /> {doc.downloads.toLocaleString()}</span>
               </div>
               
               <div className="flex items-center gap-2" title={`Impact Score: ${impactScore.toFixed(1)}`}>
-                <span className="text-[10px] font-medium text-slate-400">IMPACT</span>
-                <div className="w-16 h-1.5 bg-slate-100 rounded-full overflow-hidden">
+                <span className="text-xs font-bold text-slate-500">IMPACT</span>
+                <div className="w-20 h-2 bg-slate-100 rounded-full overflow-hidden">
                   <div className="h-full rounded-full bg-gradient-to-r from-amber-400 to-amber-600" style={{ width: `${impactScore}%` }}></div>
                 </div>
               </div>
@@ -185,11 +186,11 @@ export function Repository() {
             {doc.coverImage ? (
               <div className="relative w-full h-full flex flex-col items-center justify-center p-2">
                 <img 
-                  src={doc.coverImage} 
+                  src={getAssetUrl(doc.coverImage)} 
                   alt={doc.title} 
                   className="max-h-64 object-contain shadow-md rounded border border-slate-200 group-hover:scale-105 transition-transform duration-300"
                 />
-                <button className="mt-4 px-6 py-2 bg-[#1A5276] text-white rounded-lg text-sm font-semibold hover:bg-[#1A5276]/90 transition-colors shadow-sm flex items-center justify-center gap-2">
+                <button className="mt-4 px-6 py-2.5 bg-[#1A5276] text-white rounded-xl text-base font-bold hover:bg-[#1A5276]/90 transition-colors shadow-sm flex items-center justify-center gap-2">
                   <BookOpen className="w-4 h-4" /> Open Full Document
                 </button>
               </div>
@@ -198,9 +199,9 @@ export function Repository() {
                 <div className="absolute top-0 right-0 p-4 opacity-5 text-[#F39C12]">
                   <BookOpen className="w-32 h-32" />
                 </div>
-                <h4 className="font-bold text-slate-800 text-lg mb-2 relative z-10">Featured Research</h4>
-                <p className="text-sm text-slate-500 text-center relative z-10 mb-6">Crucial insights for the ongoing digital India land modernization program.</p>
-                <button className="px-6 py-2 bg-[#1A5276] text-white rounded-lg font-medium hover:bg-[#1A5276]/90 transition-colors shadow-sm relative z-10 w-full flex items-center justify-center gap-2">
+                <h4 className="font-bold text-slate-900 text-xl mb-2 relative z-10">Featured Research</h4>
+                <p className="text-base text-slate-600 text-center relative z-10 mb-6">Crucial insights for the ongoing digital India land modernization program.</p>
+                <button className="px-6 py-2.5 bg-[#1A5276] text-white rounded-xl font-bold hover:bg-[#1A5276]/90 transition-colors shadow-sm relative z-10 w-full flex items-center justify-center gap-2 text-base">
                   Read Paper <ArrowUpDown className="w-4 h-4 rotate-90" />
                 </button>
               </>

@@ -10,6 +10,7 @@ import { motion, AnimatePresence, type Variants } from 'framer-motion';
 import PageTransition from '@/components/ui/PageTransition';
 import { landDisputeData, landUseData, researchOutputData,
   climateRiskData, policyPerformanceData } from '@/data/mockData';
+import { getAssetUrl } from '@/utils/assets';
 
 const BLUE = '#1A5276';
 const AMBER = '#F39C12';
@@ -359,28 +360,28 @@ Report verified by DoLR Analytics Engine (SIH26019)
           </motion.div>
 
           {/* Field Evidence Photo Badges */}
-          <motion.div variants={itemVariants} className="grid grid-cols-2 gap-2">
+          <motion.div variants={itemVariants} className="grid grid-cols-2 gap-3">
             <div className="rounded-xl overflow-hidden border border-gray-200 shadow-sm relative group bg-white">
               <img 
-                src="/assets/images/climate_resilient_agro.jpg" 
+                src={getAssetUrl('assets/images/climate_resilient_agro.jpg')} 
                 alt="Agro Climate Resilience" 
-                className="w-full h-24 object-cover group-hover:scale-105 transition-transform duration-300"
+                className="w-full h-28 object-cover group-hover:scale-105 transition-transform duration-300"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-2 flex flex-col justify-end">
-                <span className="text-[9px] font-bold text-[#A9DFBF] uppercase">Climate Risk</span>
-                <p className="text-[10px] font-semibold text-white leading-tight">Watershed Mapping</p>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent p-2.5 flex flex-col justify-end">
+                <span className="text-xs font-bold text-[#A9DFBF] uppercase tracking-wider">Climate Risk</span>
+                <p className="text-xs sm:text-sm font-bold text-white leading-tight">Watershed Mapping</p>
               </div>
             </div>
 
             <div className="rounded-xl overflow-hidden border border-gray-200 shadow-sm relative group bg-white">
               <img 
-                src="/assets/images/urban_rural_corridor.jpg" 
+                src={getAssetUrl('assets/images/urban_rural_corridor.jpg')} 
                 alt="Urban Rural Transition Corridor" 
-                className="w-full h-24 object-cover group-hover:scale-105 transition-transform duration-300"
+                className="w-full h-28 object-cover group-hover:scale-105 transition-transform duration-300"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-2 flex flex-col justify-end">
-                <span className="text-[9px] font-bold text-[#F9E79F] uppercase">Peri-Urban</span>
-                <p className="text-[10px] font-semibold text-white leading-tight">Growth Corridors</p>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent p-2.5 flex flex-col justify-end">
+                <span className="text-xs font-bold text-[#F9E79F] uppercase tracking-wider">Peri-Urban</span>
+                <p className="text-xs sm:text-sm font-bold text-white leading-tight">Growth Corridors</p>
               </div>
             </div>
           </motion.div>

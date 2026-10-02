@@ -59,12 +59,12 @@ export function AnimatedStatCard({
         )}
       </div>
       
-      <div className="space-y-1">
-        <h3 className="text-gray-500 text-sm font-medium">{title}</h3>
-        <div className="text-3xl font-bold text-gray-900 flex items-baseline">
-          {prefix && <span className="text-xl mr-1 text-gray-500">{prefix}</span>}
+      <div className="space-y-1.5">
+        <h3 className="text-slate-600 text-base font-bold">{title}</h3>
+        <div className="text-4xl font-black text-slate-900 flex items-baseline tracking-tight">
+          {prefix && <span className="text-2xl mr-1 text-slate-500 font-extrabold">{prefix}</span>}
           <span>{count.toLocaleString()}</span>
-          {suffix && <span className="text-xl ml-1 text-gray-500">{suffix}</span>}
+          {suffix && <span className="text-2xl ml-1 text-slate-500 font-extrabold">{suffix}</span>}
         </div>
       </div>
     </motion.div>

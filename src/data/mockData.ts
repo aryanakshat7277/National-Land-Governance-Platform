@@ -1,4 +1,5 @@
 import type { Document, ResearchWorkspace, Hackathon, NewsItem } from '@/types';
+import { getAssetUrl } from '@/utils/assets';
 
 // ============================================================
 // MOCK DATA — Knowledge Repository
@@ -23,7 +24,7 @@ export const mockDocuments: Document[] = [
     fileType: 'PDF',
     doi: '10.1234/dlrm.2024.001',
     isAIIndexed: true,
-    coverImage: '/assets/images/cover_dilrmp_study.jpg',
+    coverImage: getAssetUrl('assets/images/cover_dilrmp_study.jpg'),
   },
   {
     id: 'doc-002',
@@ -41,7 +42,7 @@ export const mockDocuments: Document[] = [
     fileSize: '12.8 MB',
     fileType: 'PDF',
     isAIIndexed: true,
-    coverImage: '/assets/images/cover_pmay_housing.svg',
+    coverImage: getAssetUrl('assets/images/cover_pmay_housing.svg'),
   },
   {
     id: 'doc-003',
@@ -59,7 +60,7 @@ export const mockDocuments: Document[] = [
     fileSize: '2.3 GB',
     fileType: 'GeoTIFF',
     isAIIndexed: true,
-    coverImage: '/assets/images/cover_lulc_satellite.jpg',
+    coverImage: getAssetUrl('assets/images/cover_lulc_satellite.jpg'),
   },
   {
     id: 'doc-004',
@@ -79,7 +80,7 @@ export const mockDocuments: Document[] = [
     fileType: 'PDF',
     doi: '10.5678/ccv.2024.002',
     isAIIndexed: true,
-    coverImage: '/assets/images/climate_resilient_agro.jpg',
+    coverImage: getAssetUrl('assets/images/climate_resilient_agro.jpg'),
   },
   {
     id: 'doc-005',
@@ -97,7 +98,7 @@ export const mockDocuments: Document[] = [
     fileSize: '3.8 MB',
     fileType: 'PDF',
     isAIIndexed: false,
-    coverImage: '/assets/images/dispute_lok_adalat.jpg',
+    coverImage: getAssetUrl('assets/images/dispute_lok_adalat.jpg'),
   },
   {
     id: 'doc-006',
@@ -115,7 +116,7 @@ export const mockDocuments: Document[] = [
     fileSize: '8.4 MB',
     fileType: 'PDF',
     isAIIndexed: true,
-    coverImage: '/assets/images/secure_bhoomi_card.svg',
+    coverImage: getAssetUrl('assets/images/secure_bhoomi_card.svg'),
   },
   {
     id: 'doc-007',
@@ -135,7 +136,7 @@ export const mockDocuments: Document[] = [
     fileType: 'PDF',
     doi: '10.9012/fra.2024.003',
     isAIIndexed: true,
-    coverImage: '/assets/images/cover_fra_tribal.svg',
+    coverImage: getAssetUrl('assets/images/cover_fra_tribal.svg'),
   },
   {
     id: 'doc-008',
@@ -153,7 +154,7 @@ export const mockDocuments: Document[] = [
     fileSize: '15.2 MB',
     fileType: 'PDF',
     isAIIndexed: true,
-    coverImage: '/assets/images/smart_village_planning.jpg',
+    coverImage: getAssetUrl('assets/images/smart_village_planning.jpg'),
   },
   {
     id: 'doc-009',
@@ -172,7 +173,7 @@ export const mockDocuments: Document[] = [
     fileType: 'PDF',
     doi: '10.1016/j.landgov.2024.03.018',
     isAIIndexed: true,
-    coverImage: '/assets/images/cover_bhu_aadhaar_study.svg',
+    coverImage: getAssetUrl('assets/images/cover_bhu_aadhaar_study.svg'),
   },
   {
     id: 'doc-010',
@@ -191,7 +192,7 @@ export const mockDocuments: Document[] = [
     fileType: 'PDF',
     doi: '10.1038/s41558-024-01982-x',
     isAIIndexed: true,
-    coverImage: '/assets/images/cover_climate_adaptation.svg',
+    coverImage: getAssetUrl('assets/images/cover_climate_adaptation.svg'),
   },
   {
     id: 'doc-011',
@@ -209,7 +210,7 @@ export const mockDocuments: Document[] = [
     fileSize: '7.9 MB',
     fileType: 'PDF',
     isAIIndexed: true,
-    coverImage: '/assets/images/cover_dispute_litigation.svg',
+    coverImage: getAssetUrl('assets/images/cover_dispute_litigation.svg'),
   },
   {
     id: 'doc-012',
@@ -227,7 +228,7 @@ export const mockDocuments: Document[] = [
     fileSize: '14.1 MB',
     fileType: 'PDF',
     isAIIndexed: true,
-    coverImage: '/assets/images/cover_svamitva_outcomes.svg',
+    coverImage: getAssetUrl('assets/images/cover_svamitva_outcomes.svg'),
   },
   {
     id: 'doc-013',
@@ -245,7 +246,7 @@ export const mockDocuments: Document[] = [
     fileSize: '18.5 MB',
     fileType: 'PDF',
     isAIIndexed: true,
-    coverImage: '/assets/images/drone_cadastral_survey.jpg',
+    coverImage: getAssetUrl('assets/images/drone_cadastral_survey.jpg'),
   },
   {
     id: 'doc-014',
@@ -263,7 +264,7 @@ export const mockDocuments: Document[] = [
     fileSize: '9.2 MB',
     fileType: 'PDF',
     isAIIndexed: true,
-    coverImage: '/assets/images/svamitva_property_card_preview.svg',
+    coverImage: getAssetUrl('assets/images/svamitva_property_card_preview.svg'),
   },
 ];
 
@@ -288,7 +289,7 @@ export const mockWorkspaces: ResearchWorkspace[] = [
     lastActivity: '2024-09-28',
     documentsCount: 34,
     messagesCount: 287,
-    coverImage: '/assets/images/dispute_lok_adalat.jpg',
+    coverImage: getAssetUrl('assets/images/dispute_lok_adalat.jpg'),
   },
   {
     id: 'ws-002',
@@ -305,7 +306,7 @@ export const mockWorkspaces: ResearchWorkspace[] = [
     lastActivity: '2024-09-30',
     documentsCount: 21,
     messagesCount: 154,
-    coverImage: '/assets/images/climate_resilient_agro.jpg',
+    coverImage: getAssetUrl('assets/images/climate_resilient_agro.jpg'),
   },
   {
     id: 'ws-003',
@@ -322,7 +323,7 @@ export const mockWorkspaces: ResearchWorkspace[] = [
     lastActivity: '2024-08-15',
     documentsCount: 18,
     messagesCount: 89,
-    coverImage: '/assets/images/urban_rural_corridor.jpg',
+    coverImage: getAssetUrl('assets/images/urban_rural_corridor.jpg'),
   },
   {
     id: 'ws-004',
@@ -339,7 +340,7 @@ export const mockWorkspaces: ResearchWorkspace[] = [
     lastActivity: '2024-10-01',
     documentsCount: 42,
     messagesCount: 412,
-    coverImage: '/assets/images/bhu_aadhaar_ulpin.svg',
+    coverImage: getAssetUrl('assets/images/bhu_aadhaar_ulpin.svg'),
   },
   {
     id: 'ws-005',
@@ -356,7 +357,7 @@ export const mockWorkspaces: ResearchWorkspace[] = [
     lastActivity: '2024-09-29',
     documentsCount: 29,
     messagesCount: 230,
-    coverImage: '/assets/images/revenue_court_analytics.svg',
+    coverImage: getAssetUrl('assets/images/revenue_court_analytics.svg'),
   },
   {
     id: 'ws-006',
@@ -372,7 +373,7 @@ export const mockWorkspaces: ResearchWorkspace[] = [
     lastActivity: '2024-09-25',
     documentsCount: 16,
     messagesCount: 118,
-    coverImage: '/assets/images/coastal_land_regulation.svg',
+    coverImage: getAssetUrl('assets/images/coastal_land_regulation.svg'),
   },
 ];
 
@@ -393,7 +394,7 @@ export const mockHackathons: Hackathon[] = [
     status: 'active',
     organizer: 'Ministry of Rural Development + NIC',
     tags: ['land records', 'AI/ML', 'citizen services', 'blockchain'],
-    coverImage: '/assets/images/hackathon_landtech.jpg',
+    coverImage: getAssetUrl('assets/images/hackathon_landtech.jpg'),
   },
   {
     id: 'hack-002',
@@ -407,7 +408,7 @@ export const mockHackathons: Hackathon[] = [
     status: 'upcoming',
     organizer: 'ISRO + MoEF&CC',
     tags: ['geospatial', 'climate', 'satellite', 'data science'],
-    coverImage: '/assets/images/gis_mapping_lab.jpg',
+    coverImage: getAssetUrl('assets/images/gis_mapping_lab.jpg'),
   },
   {
     id: 'hack-003',
@@ -421,7 +422,7 @@ export const mockHackathons: Hackathon[] = [
     status: 'completed',
     organizer: 'MoRD + TISS',
     tags: ['tribal', 'land rights', 'mobile app', 'vernacular'],
-    coverImage: '/assets/images/tribal_forest_rights.jpg',
+    coverImage: getAssetUrl('assets/images/tribal_forest_rights.jpg'),
   },
   {
     id: 'hack-004',
@@ -435,7 +436,7 @@ export const mockHackathons: Hackathon[] = [
     status: 'upcoming',
     organizer: 'Ministry of Panchayati Raj + Survey of India',
     tags: ['drone survey', 'computer vision', 'SVAMITVA', 'AI cadastre'],
-    coverImage: '/assets/images/drone_cadastral_survey.jpg',
+    coverImage: getAssetUrl('assets/images/drone_cadastral_survey.jpg'),
   },
 ];
 
