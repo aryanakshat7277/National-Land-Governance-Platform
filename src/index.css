@@ -12,12 +12,10 @@
   html {
     @apply text-gov-text bg-gov-light scroll-smooth;
     font-family: 'Inter', system-ui, sans-serif;
-    font-size: 16.5px;
   }
 
   body {
     @apply min-h-screen bg-gov-light text-gov-text antialiased;
-    font-size: 1.05rem;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -25,10 +23,10 @@
     line-height: 1.3;
   }
 
-  h1 { @apply text-4xl font-extrabold; }
-  h2 { @apply text-3xl font-bold; }
-  h3 { @apply text-2xl font-bold; }
-  h4 { @apply text-xl font-semibold; }
+  h1 { @apply text-2xl sm:text-3xl font-bold; }
+  h2 { @apply text-xl sm:text-2xl font-bold; }
+  h3 { @apply text-lg font-semibold; }
+  h4 { @apply text-base font-semibold; }
 }
 
 @layer components {
@@ -87,26 +85,26 @@
 
   /* Section title */
   .section-title {
-    @apply text-3xl font-extrabold text-[#1A5276] mb-1.5 tracking-tight;
+    @apply text-xl sm:text-2xl font-bold text-[#1A5276] mb-1 tracking-tight;
   }
 
   .section-subtitle {
-    @apply text-slate-500 text-base mb-6 font-medium;
+    @apply text-slate-500 text-sm mb-4 font-normal;
   }
 
   /* Stat card */
   .stat-card {
-    @apply card p-6 flex flex-col gap-1.5;
+    @apply card p-5 flex flex-col gap-1;
   }
 
   /* Nav link */
   .nav-link {
-    @apply flex items-center gap-3.5 px-3.5 py-3 rounded-xl text-slate-600 font-semibold
-           hover:bg-primary-50 hover:text-primary-700 transition-colors duration-150 text-base;
+    @apply flex items-center gap-3 px-3 py-2 rounded-lg text-slate-600 font-medium
+           hover:bg-primary-50 hover:text-primary-700 transition-colors duration-150 text-sm;
   }
 
   .nav-link-active {
-    @apply nav-link bg-primary-50 text-[#1A5276] font-bold;
+    @apply nav-link bg-primary-50 text-[#1A5276] font-semibold;
   }
 
   /* GIS Map container */

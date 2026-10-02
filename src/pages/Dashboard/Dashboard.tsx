@@ -184,25 +184,25 @@ export default function Dashboard() {
                     </svg>
                   </div>
                   <div>
-                    <span className="text-xs sm:text-sm font-black uppercase tracking-wider text-[#1A5276] bg-blue-50/90 px-3 py-1 rounded-full border border-blue-200">
+                    <span className="text-xs font-bold uppercase tracking-wider text-[#1A5276] bg-blue-50/90 px-3 py-0.5 rounded-full border border-blue-200">
                       GOVERNMENT OF INDIA · MINISTRY OF RURAL DEVELOPMENT
                     </span>
-                    <p className="text-xs sm:text-sm text-slate-600 font-semibold mt-1">
+                    <p className="text-xs text-slate-500 font-medium mt-1">
                       Department of Land Resources (DoLR) · SIH26019 National Digital Initiative
                     </p>
                   </div>
                 </div>
 
                 {/* Main Headline */}
-                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-slate-900 leading-[1.18]">
+                <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight text-slate-900 leading-tight">
                   National Digital Platform for <span className="text-[#1A5276] relative inline-block">
                     Evidence-Based Land Governance
-                    <span className="absolute bottom-1 left-0 right-0 h-2.5 bg-[#F39C12]/20 -z-10 rounded"></span>
+                    <span className="absolute bottom-1 left-0 right-0 h-2 bg-[#F39C12]/20 -z-10 rounded"></span>
                   </span>
                 </h1>
                 
                 {/* Description */}
-                <p className="text-base sm:text-lg text-slate-600 max-w-2xl leading-relaxed font-normal">
+                <p className="text-sm sm:text-base text-slate-600 max-w-2xl leading-relaxed font-normal">
                   A centralized national ecosystem unifying multi-departmental land records, ISRO Bhuvan satellite imagery, cadastral drone photogrammetry, and AI-assisted policy simulation for transparent, future-ready land administration in India.
                 </p>
 
@@ -362,17 +362,17 @@ export default function Dashboard() {
 
                 {/* 2 Clean Light Theme Metric Cards */}
                 <div className="grid grid-cols-2 gap-3">
-                  <div className="bg-white rounded-xl p-4 border border-slate-200 shadow-xs hover:border-[#1A5276]/40 transition-colors">
-                    <p className="text-3xl font-black text-[#1E8449]">93.2%</p>
-                    <p className="text-slate-700 text-sm font-bold mt-0.5">Villages Digitized</p>
-                    <div className="w-full h-2 bg-slate-100 rounded-full mt-2 overflow-hidden">
+                  <div className="bg-white rounded-xl p-3.5 border border-slate-200 shadow-xs hover:border-[#1A5276]/40 transition-colors">
+                    <p className="text-2xl font-extrabold text-[#1E8449]">93.2%</p>
+                    <p className="text-slate-700 text-xs sm:text-sm font-semibold mt-0.5">Villages Digitized</p>
+                    <div className="w-full h-1.5 bg-slate-100 rounded-full mt-2 overflow-hidden">
                       <div className="h-full bg-emerald-500 w-[93.2%] rounded-full"></div>
                     </div>
                   </div>
-                  <div className="bg-white rounded-xl p-4 border border-slate-200 shadow-xs hover:border-[#1A5276]/40 transition-colors">
-                    <p className="text-3xl font-black text-[#1A5276]">12,847</p>
-                    <p className="text-slate-700 text-sm font-bold mt-0.5">Indexed Research &amp; Acts</p>
-                    <span className="inline-block mt-1.5 text-xs text-primary-700 font-bold bg-blue-50 px-2 py-0.5 rounded border border-blue-200">
+                  <div className="bg-white rounded-xl p-3.5 border border-slate-200 shadow-xs hover:border-[#1A5276]/40 transition-colors">
+                    <p className="text-2xl font-extrabold text-[#1A5276]">12,847</p>
+                    <p className="text-slate-700 text-xs sm:text-sm font-semibold mt-0.5">Indexed Research &amp; Acts</p>
+                    <span className="inline-block mt-1 text-[11px] text-primary-700 font-bold bg-blue-50 px-2 py-0.5 rounded border border-blue-200">
                       DoLR / ISRO Verified
                     </span>
                   </div>
