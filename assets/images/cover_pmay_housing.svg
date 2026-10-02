@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F4F8FB"/>
+    </linearGradient>
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1A5276"/>
+      <stop offset="100%" stop-color="#2E86C1"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F39C12"/>
+      <stop offset="100%" stop-color="#E67E22"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="800" fill="url(#bgGrad)"/>
+  <rect x="0" y="0" width="600" height="8" fill="url(#primaryGrad)"/>
+
+  <!-- Tricolor Accent Top -->
+  <rect x="40" y="30" width="100" height="3" fill="#FF9933"/>
+  <rect x="140" y="30" width="100" height="3" fill="#DEE2E6"/>
+  <rect x="240" y="30" width="100" height="3" fill="#138808"/>
+
+  <!-- Ministry Seal Header -->
+  <g transform="translate(300, 110)" text-anchor="middle">
+    <circle cx="0" cy="0" r="32" fill="#EAF2FA" stroke="#1A5276" stroke-width="1.5"/>
+    <!-- Lion Emblem Stylized -->
+    <path d="M-8,-16 L8,-16 L12,-6 L8,14 L-8,14 L-12,-6 Z" fill="#1A5276" opacity="0.8"/>
+    <circle cx="0" cy="0" r="8" fill="#F39C12"/>
+    <text y="48" font-family="Inter, sans-serif" font-size="10" font-weight="700" letter-spacing="2" fill="#1A5276">GOVERNMENT OF INDIA</text>
+    <text y="62" font-family="Inter, sans-serif" font-size="9" font-weight="500" letter-spacing="1" fill="#6C757D">MINISTRY OF HOUSING &amp; URBAN AFFAIRS</text>
+  </g>
+
+  <!-- Divider -->
+  <line x1="60" y1="210" x2="540" y2="210" stroke="#DEE2E6" stroke-width="1"/>
+
+  <!-- Title Section -->
+  <text x="60" y="270" font-family="Inter, sans-serif" font-size="30" font-weight="800" fill="#1A5276" line-height="1.2">
+    <tspan x="60" dy="0">Urban-Rural Land</tspan>
+    <tspan x="60" dy="38">Transition Patterns</tspan>
+    <tspan x="60" dy="38">Under PMAY</tspan>
+  </text>
+  <text x="60" y="390" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#F39C12" letter-spacing="1.5">
+    PAN-INDIA POLICY ASSESSMENT &amp; MASTER PLAN INTEGRATION
+  </text>
+
+  <!-- Graphical Blueprint Cadastre Grid -->
+  <g transform="translate(60, 420)">
+    <rect width="480" height="220" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+    <!-- Grid Lines -->
+    <path d="M40 0 V220 M120 0 V220 M200 0 V220 M280 0 V220 M360 0 V220 M440 0 V220" stroke="#F1F5F9" stroke-width="1"/>
+    <path d="M0 40 H480 M0 100 H480 M0 160 H480" stroke="#F1F5F9" stroke-width="1"/>
+    
+    <!-- Geometric Land Parcels -->
+    <polygon points="40,40 120,40 120,100 40,100" fill="#EAF2FA" stroke="#2E86C1" stroke-width="2"/>
+    <polygon points="120,40 280,40 280,160 200,160 200,100 120,100" fill="#FEF9EC" stroke="#F39C12" stroke-width="2"/>
+    <polygon points="280,40 440,40 440,100 280,100" fill="#E9F7EF" stroke="#1E8449" stroke-width="2"/>
+    <polygon points="40,100 200,100 200,220 40,220" fill="#F8FAFC" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="4"/>
+    <polygon points="280,100 440,100 440,220 280,220" fill="#EAF2FA" stroke="#1A5276" stroke-width="2"/>
+
+    <!-- Data Labels -->
+    <text x="80" y="75" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#1A5276" text-anchor="middle">PARCEL A-14</text>
+    <text x="200" y="95" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#D4890F" text-anchor="middle">PMAY HOUSING 16.4 Ha</text>
+    <text x="360" y="75" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#1E8449" text-anchor="middle">GREEN BUFFER</text>
+    <text x="360" y="165" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#1A5276" text-anchor="middle">INFRASTRUCTURE CORRIDOR</text>
+  </g>
+
+  <!-- Footer Information -->
+  <line x1="60" y1="680" x2="540" y2="680" stroke="#DEE2E6" stroke-width="1"/>
+  <text x="60" y="715" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#1A5276">DIRECTORATE OF URBAN &amp; REGIONAL PLANNING</text>
+  <text x="60" y="732" font-family="Inter, sans-serif" font-size="10" font-weight="400" fill="#6C757D">Research Paper No. MoHUA/URP/2024-88 · Peer-Reviewed Policy Series</text>
+  
+  <text x="540" y="725" font-family="Inter, sans-serif" font-size="14" font-weight="800" fill="#F39C12" text-anchor="end">2024</text>
+</svg>

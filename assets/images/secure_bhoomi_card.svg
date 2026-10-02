@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCFDFD"/>
+      <stop offset="100%" stop-color="#EFF6FB"/>
+    </linearGradient>
+    <linearGradient id="goldHolo" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F39C12"/>
+      <stop offset="50%" stop-color="#F9E79F"/>
+      <stop offset="100%" stop-color="#D4AC0D"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="800" fill="url(#cardBg)"/>
+  
+  <!-- Security Guilloche Border Pattern -->
+  <rect x="25" y="25" width="550" height="750" rx="16" fill="none" stroke="#2E86C1" stroke-width="2"/>
+  <rect x="33" y="33" width="534" height="734" rx="12" fill="none" stroke="#D5E6F5" stroke-width="1.5" stroke-dasharray="6,3"/>
+
+  <!-- Tricolor Bar Header -->
+  <rect x="40" y="42" width="170" height="4" fill="#FF9933"/>
+  <rect x="210" y="42" width="180" height="4" fill="#E2E8F0"/>
+  <rect x="390" y="42" width="170" height="4" fill="#138808"/>
+
+  <!-- Certificate Header -->
+  <g transform="translate(300, 95)" text-anchor="middle">
+    <!-- State Emblem Crest -->
+    <circle cx="0" cy="0" r="28" fill="#1A5276"/>
+    <circle cx="0" cy="0" r="10" fill="#F39C12"/>
+    <text y="44" font-family="Inter, sans-serif" font-size="11" font-weight="800" letter-spacing="2" fill="#1A5276">GOVERNMENT OF INDIA · REVENUE DEPARTMENT</text>
+    <text y="60" font-family="Inter, sans-serif" font-size="16" font-weight="900" fill="#1A5276">SVAMITVA DIGITAL PROPERTY CARD</text>
+    <text y="76" font-family="Inter, sans-serif" font-size="10" font-weight="600" letter-spacing="1" fill="#1E8449">BHOOMI RECORD OF RIGHTS (RoR) · CRYPTOGRAPHICALLY VERIFIED</text>
+  </g>
+
+  <!-- Holographic Seal Top-Right -->
+  <g transform="translate(490, 110)">
+    <circle cx="0" cy="0" r="30" fill="url(#goldHolo)" stroke="#B7950B" stroke-width="2"/>
+    <circle cx="0" cy="0" r="24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-dasharray="3"/>
+    <text y="4" font-family="Inter, sans-serif" font-size="8" font-weight="800" text-anchor="middle" fill="#7D6608">VERIFIED</text>
+    <text y="-8" font-family="Inter, sans-serif" font-size="7" font-weight="700" text-anchor="middle" fill="#7D6608">DILRMP</text>
+    <text y="14" font-family="Inter, sans-serif" font-size="6" font-weight="600" text-anchor="middle" fill="#7D6608">SECURE</text>
+  </g>
+
+  <!-- Parcel & Owner Details Box -->
+  <g transform="translate(55, 200)">
+    <rect width="490" height="240" rx="10" fill="#FFFFFF" stroke="#DEE2E6" stroke-width="1.5"/>
+    
+    <!-- Table Header -->
+    <rect width="490" height="35" rx="10" fill="#EAF2FA"/>
+    <text x="20" y="23" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#1A5276">CADASTRAL PARCEL SPECIFICATION</text>
+    <text x="470" y="23" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#2E86C1" text-anchor="end">ULPIN: 1478-9023-4412-MH</text>
+
+    <!-- Fields -->
+    <text x="20" y="65" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#6C757D">Owner Name:</text>
+    <text x="140" y="65" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#212529">Ramesh S. Deshmukh &amp; Savita Deshmukh</text>
+
+    <text x="20" y="95" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#6C757D">Village / Tehsil:</text>
+    <text x="140" y="95" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#212529">Vadodara Rural / Haveli</text>
+
+    <text x="20" y="125" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#6C757D">District / State:</text>
+    <text x="140" y="125" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#212529">Pune / Maharashtra (PIN: 412207)</text>
+
+    <text x="20" y="155" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#6C757D">Survey / Gat No.:</text>
+    <text x="140" y="155" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#1A5276">Gat No. 114 / Parcel 2B</text>
+
+    <text x="20" y="185" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#6C757D">Total Area:</text>
+    <text x="140" y="185" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#1E8449">2.45 Hectares (6.05 Acres)</text>
+
+    <text x="20" y="215" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#6C757D">GIS Coordinates:</text>
+    <text x="140" y="215" font-family="JetBrains Mono, monospace" font-size="10" font-weight="500" fill="#2E86C1">18.5204° N, 73.8567° E (WGS-84)</text>
+  </g>
+
+  <!-- Micro QR Code & Blockchain Seal Section -->
+  <g transform="translate(55, 465)">
+    <rect width="490" height="180" rx="10" fill="#FFFFFF" stroke="#DEE2E6" stroke-width="1.5"/>
+    
+    <!-- QR Code Visual Representation -->
+    <g transform="translate(25, 20)">
+      <rect width="130" height="130" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+      <!-- QR Blocks -->
+      <rect x="15" y="15" width="30" height="30" fill="#1A5276"/>
+      <rect x="22" y="22" width="16" height="16" fill="#FFFFFF"/>
+      <rect x="85" y="15" width="30" height="30" fill="#1A5276"/>
+      <rect x="92" y="22" width="16" height="16" fill="#FFFFFF"/>
+      <rect x="15" y="85" width="30" height="30" fill="#1A5276"/>
+      <rect x="22" y="92" width="16" height="16" fill="#FFFFFF"/>
+      <circle cx="65" cy="65" r="10" fill="#F39C12"/>
+      <!-- Data Dots -->
+      <rect x="55" y="25" width="6" height="6" fill="#2E86C1"/>
+      <rect x="68" y="35" width="8" height="8" fill="#1A5276"/>
+      <rect x="85" y="70" width="8" height="8" fill="#1E8449"/>
+      <rect x="60" y="95" width="12" height="6" fill="#1A5276"/>
+      <rect x="95" y="100" width="8" height="8" fill="#2E86C1"/>
+    </g>
+
+    <!-- Verification Info -->
+    <text x="175" y="45" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="#1A5276">DigiLocker &amp; National Geoportal Linked</text>
+    <text x="175" y="65" font-family="Inter, sans-serif" font-size="10" fill="#6C757D">Scan to verify cryptographic signature, boundary coordinates,</text>
+    <text x="175" y="80" font-family="Inter, sans-serif" font-size="10" fill="#6C757D">and encumbrance status directly from State Land Registry.</text>
+    
+    <text x="175" y="115" font-family="JetBrains Mono, monospace" font-size="9" fill="#94A3B8">HASH: 7f8a9b2c4e1d...98e4d2a1b0</text>
+    <text x="175" y="135" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#1E8449">Status: Verified Zero-Dispute Clear Title</text>
+  </g>
+
+  <!-- Digital Signature Footer -->
+  <g transform="translate(55, 675)">
+    <line x1="0" y1="0" x2="490" y2="0" stroke="#E2E8F0" stroke-width="1"/>
+    <text x="0" y="30" font-family="Inter, sans-serif" font-size="9" font-weight="500" fill="#94A3B8">ISSUED UNDER SECTION 22 OF LAND REVENUE CODE</text>
+    <text x="0" y="45" font-family="Inter, sans-serif" font-size="9" font-weight="500" fill="#94A3B8">VALID ACROSS ALL COMMERCIAL &amp; COOPERATIVE BANKS FOR KCC LOANS</text>
+    
+    <text x="490" y="30" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#1A5276" text-anchor="end">Sub-Divisional Magistrate (SDM)</text>
+    <text x="490" y="45" font-family="Inter, sans-serif" font-size="9" font-weight="500" fill="#1E8449" text-anchor="end">Digitally Signed · NIC CA 2024</text>
+  </g>
+</svg>

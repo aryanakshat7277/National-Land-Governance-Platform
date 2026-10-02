@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="courtBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F8FAFC"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#courtBg)"/>
+  <rect x="0" y="0" width="400" height="6" fill="#FF9933"/>
+  <rect x="400" y="0" width="400" height="6" fill="#E2E8F0"/>
+  <rect x="800" y="0" width="400" height="6" fill="#138808"/>
+
+  <!-- Header -->
+  <g transform="translate(60, 50)">
+    <rect width="1080" height="70" rx="12" fill="#FFFFFF" stroke="#DEE2E6" stroke-width="1.5"/>
+    <circle cx="45" cy="35" r="22" fill="#8E44AD"/>
+    <!-- Scales Icon -->
+    <path d="M45,22 V45 M35,28 H55" stroke="#FFFFFF" stroke-width="2.5"/>
+    <text x="80" y="32" font-family="Inter, sans-serif" font-size="18" font-weight="800" fill="#1A5276">REVENUE DISPUTE LITIGATION &amp; LOK ADALAT CLEARANCE ANALYTICS</text>
+    <text x="80" y="52" font-family="Inter, sans-serif" font-size="12" font-weight="500" fill="#6C757D">National Judicial Data Grid (NJDG) &amp; Department of Land Resources (DoLR) Integrated Portal</text>
+    <rect x="940" y="20" width="120" height="30" rx="6" fill="#F4ECF7" stroke="#AF7AC5" stroke-width="1"/>
+    <text x="1000" y="40" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#8E44AD" text-anchor="middle">LIVE NJDG SYNC</text>
+  </g>
+
+  <!-- Left Side: Pendency Pipeline Funnel -->
+  <g transform="translate(60, 150)">
+    <rect width="580" height="470" rx="16" fill="#FFFFFF" stroke="#DEE2E6" stroke-width="1.5"/>
+    <rect width="580" height="45" rx="16" fill="#EAF2FA"/>
+    <text x="20" y="28" font-family="Inter, sans-serif" font-size="13" font-weight="800" fill="#1A5276">DISPUTE RESOLUTION STAGES &amp; TIME-TO-DISPOSAL</text>
+
+    <g transform="translate(25, 70)">
+      <!-- Stage 1 -->
+      <rect width="530" height="65" rx="10" fill="#FADBD8" stroke="#E74C3C" stroke-width="1"/>
+      <text x="20" y="28" font-family="Inter, sans-serif" font-size="12" font-weight="800" fill="#C0392B">Tehsildar / Naib-Tehsildar Court (Mutation Appeals)</text>
+      <text x="20" y="48" font-family="Inter, sans-serif" font-size="11" fill="#7F8C8D">Cases Filed: 4,82,100 · Disposal Time: 4.8 Months</text>
+      <text x="510" y="38" font-family="Inter, sans-serif" font-size="18" font-weight="900" fill="#C0392B" text-anchor="end">62% Resolved</text>
+
+      <!-- Stage 2 -->
+      <g transform="translate(0, 85)">
+        <rect width="530" height="65" rx="10" fill="#FCF3CF" stroke="#F1C40F" stroke-width="1"/>
+        <text x="20" y="28" font-family="Inter, sans-serif" font-size="12" font-weight="800" fill="#B7950B">Sub-Divisional Magistrate (SDM) / Collector Appeals</text>
+        <text x="20" y="48" font-family="Inter, sans-serif" font-size="11" fill="#7F8C8D">Boundary Demarcation &amp; Partition Suits: 1,84,200</text>
+        <text x="510" y="38" font-family="Inter, sans-serif" font-size="18" font-weight="900" fill="#B7950B" text-anchor="end">24% Escalated</text>
+      </g>
+
+      <!-- Stage 3 -->
+      <g transform="translate(0, 170)">
+        <rect width="530" height="65" rx="10" fill="#E8F8F5" stroke="#2ECC71" stroke-width="1"/>
+        <text x="20" y="28" font-family="Inter, sans-serif" font-size="12" font-weight="800" fill="#1E8449">Special National Lok Adalat (Amicable Settlement)</text>
+        <text x="20" y="48" font-family="Inter, sans-serif" font-size="11" fill="#7F8C8D">Compounded Family Partitions: 1,16,400</text>
+        <text x="510" y="38" font-family="Inter, sans-serif" font-size="18" font-weight="900" fill="#1E8449" text-anchor="end">88.4% Win-Win</text>
+      </g>
+
+      <!-- Stage 4 -->
+      <g transform="translate(0, 255)">
+        <rect width="530" height="65" rx="10" fill="#EBF5FB" stroke="#2980B9" stroke-width="1"/>
+        <text x="20" y="28" font-family="Inter, sans-serif" font-size="12" font-weight="800" fill="#1A5276">High Court &amp; Civil Appeals (Stay Orders)</text>
+        <text x="20" y="48" font-family="Inter, sans-serif" font-size="11" fill="#7F8C8D">Title Injunctions &amp; RFCTLARR Compensation Appeals: 62,300</text>
+        <text x="510" y="38" font-family="Inter, sans-serif" font-size="18" font-weight="900" fill="#1A5276" text-anchor="end">&lt;8% Long Tail</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Right Side: State-wise Dispute Index & Target Directives -->
+  <g transform="translate(670, 150)">
+    <rect width="470" height="470" rx="16" fill="#FFFFFF" stroke="#DEE2E6" stroke-width="1.5"/>
+    <rect width="470" height="45" rx="16" fill="#EAF2FA"/>
+    <text x="20" y="28" font-family="Inter, sans-serif" font-size="13" font-weight="800" fill="#1A5276">TOP STATE LITIGATION VOLUME (IN THOUSANDS)</text>
+
+    <g transform="translate(25, 65)">
+      <!-- Bar 1 UP -->
+      <text x="0" y="20" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#2C3E50">Uttar Pradesh</text>
+      <rect x="120" y="8" width="220" height="18" rx="4" fill="#E74C3C"/>
+      <text x="350" y="22" font-family="Inter, sans-serif" font-size="11" font-weight="800" fill="#C0392B">342k</text>
+
+      <!-- Bar 2 Bihar -->
+      <text x="0" y="55" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#2C3E50">Bihar</text>
+      <rect x="120" y="43" width="135" height="18" rx="4" fill="#E67E22"/>
+      <text x="265" y="57" font-family="Inter, sans-serif" font-size="11" font-weight="800" fill="#D35400">198k</text>
+
+      <!-- Bar 3 Rajasthan -->
+      <text x="0" y="90" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#2C3E50">Rajasthan</text>
+      <rect x="120" y="78" width="105" height="18" rx="4" fill="#F39C12"/>
+      <text x="235" y="92" font-family="Inter, sans-serif" font-size="11" font-weight="800" fill="#D4AC0D">156k</text>
+
+      <!-- Bar 4 MP -->
+      <text x="0" y="125" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#2C3E50">Madhya Pradesh</text>
+      <rect x="120" y="113" width="90" height="18" rx="4" fill="#F1C40F"/>
+      <text x="220" y="127" font-family="Inter, sans-serif" font-size="11" font-weight="800" fill="#B7950B">134k</text>
+
+      <!-- Bar 5 Maharashtra -->
+      <text x="0" y="160" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#2C3E50">Maharashtra</text>
+      <rect x="120" y="148" width="75" height="18" rx="4" fill="#2ECC71"/>
+      <text x="205" y="162" font-family="Inter, sans-serif" font-size="11" font-weight="800" fill="#27AE60">112k</text>
+
+      <!-- Bar 6 Telangana -->
+      <text x="0" y="195" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#2C3E50">Telangana (Dharani)</text>
+      <rect x="120" y="183" width="20" height="18" rx="4" fill="#1ABC9C"/>
+      <text x="150" y="197" font-family="Inter, sans-serif" font-size="11" font-weight="800" fill="#16A085">22k (Lowest)</text>
+    </g>
+
+    <!-- Key Takeaway Card -->
+    <g transform="translate(25, 305)">
+      <rect width="420" height="85" rx="10" fill="#E8F8F5" stroke="#2ECC71" stroke-width="1"/>
+      <text x="15" y="24" font-family="Inter, sans-serif" font-size="11" font-weight="800" fill="#1E8449">Policy Finding: Digital RoR Integration Impact</text>
+      <text x="15" y="44" font-family="Inter, sans-serif" font-size="10" fill="#2C3E50">States with 100% digital cadastral boundaries</text>
+      <text x="15" y="60" font-family="Inter, sans-serif" font-size="10" fill="#2C3E50">experience 78% fewer new civil litigation filings</text>
+      <text x="15" y="76" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#1E8449">Saving ₹4,200 Crores annually in citizen legal expenses.</text>
+    </g>
+  </g>
+</svg>

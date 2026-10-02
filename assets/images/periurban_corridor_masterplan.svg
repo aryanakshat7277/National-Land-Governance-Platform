@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="periBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F4F8FA"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#periBg)"/>
+  <rect x="0" y="0" width="400" height="6" fill="#FF9933"/>
+  <rect x="400" y="0" width="400" height="6" fill="#E2E8F0"/>
+  <rect x="800" y="0" width="400" height="6" fill="#138808"/>
+
+  <g transform="translate(60, 50)">
+    <rect width="1080" height="70" rx="12" fill="#FFFFFF" stroke="#DEE2E6" stroke-width="1.5"/>
+    <circle cx="45" cy="35" r="22" fill="#2980B9"/>
+    <!-- Building Icon -->
+    <path d="M35,45 V25 H45 V45 M45,25 H55 V45" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+    <text x="80" y="32" font-family="Inter, sans-serif" font-size="18" font-weight="800" fill="#1A5276">PERI-URBAN GROWTH CORRIDOR &amp; LAND POOLING MASTER PLAN</text>
+    <text x="80" y="52" font-family="Inter, sans-serif" font-size="12" font-weight="500" fill="#6C757D">National Capital Region Planning Board (NCRPB) &amp; Smart Cities Mission · Land Pooling Scheme (LPS)</text>
+    <rect x="940" y="20" width="120" height="30" rx="6" fill="#EBF5FB" stroke="#2980B9" stroke-width="1"/>
+    <text x="1000" y="40" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#1A5276" text-anchor="middle">TRANSIT ALIGNED</text>
+  </g>
+
+  <!-- Left: Spatial Master Plan Map -->
+  <g transform="translate(60, 150)">
+    <rect width="660" height="470" rx="16" fill="#FFFFFF" stroke="#DEE2E6" stroke-width="1.5"/>
+    <rect width="660" height="45" rx="16" fill="#EAF2FA"/>
+    <text x="20" y="28" font-family="Inter, sans-serif" font-size="13" font-weight="800" fill="#1A5276">EXPRESSWAY CORRIDOR &amp; RECONSTITUTED LAND POOLING PLOTS</text>
+
+    <g transform="translate(30, 65)">
+      <!-- Main Expressway Ribbon -->
+      <path d="M0,180 Q300,160 600,190" stroke="#BDC3C7" stroke-width="36" fill="none"/>
+      <path d="M0,180 Q300,160 600,190" stroke="#34495E" stroke-width="26" fill="none"/>
+      <path d="M0,180 Q300,160 600,190" stroke="#F1C40F" stroke-width="2" stroke-dasharray="8,6" fill="none"/>
+      <text x="300" y="160" font-family="Inter, sans-serif" font-size="10" font-weight="800" fill="#FFFFFF" text-anchor="middle">DELHI-MUMBAI INDUSTRIAL EXPRESSWAY (DMIC)</text>
+
+      <!-- Metro / RRTS Transit Station -->
+      <g transform="translate(280, 180)">
+        <circle cx="0" cy="0" r="16" fill="#E74C3C" stroke="#FFFFFF" stroke-width="3"/>
+        <circle cx="0" cy="0" r="6" fill="#FFFFFF"/>
+        <text x="0" y="32" font-family="Inter, sans-serif" font-size="10" font-weight="800" fill="#C0392B" text-anchor="middle">RRTS MULTI-MODAL HUB</text>
+      </g>
+
+      <!-- North Side: Reconstituted Land Pooling Plots -->
+      <polygon points="40,30 180,20 170,120 30,130" fill="#FEF9E7" stroke="#F39C12" stroke-width="2"/>
+      <text x="105" y="70" font-family="Inter, sans-serif" font-size="10" font-weight="800" fill="#B7950B">SECTOR 12 (RESIDENTIAL)</text>
+      <text x="105" y="85" font-family="Inter, sans-serif" font-size="8" fill="#7D6608">60% Returned to Farmers</text>
+
+      <polygon points="180,20 340,30 330,120 170,120" fill="#E8F8F5" stroke="#1ABC9C" stroke-width="2"/>
+      <text x="255" y="70" font-family="Inter, sans-serif" font-size="10" font-weight="800" fill="#16A085">COMMERCIAL PODIUM</text>
+      <text x="255" y="85" font-family="Inter, sans-serif" font-size="8" fill="#117864">High FSI 4.0 Transit Zone</text>
+
+      <polygon points="340,30 560,40 540,130 330,120" fill="#EAFAF1" stroke="#27AE60" stroke-width="2"/>
+      <text x="445" y="70" font-family="Inter, sans-serif" font-size="10" font-weight="800" fill="#1E8449">GREEN BIODIVERSITY BUFFER</text>
+      <text x="445" y="85" font-family="Inter, sans-serif" font-size="8" fill="#145A32">100m Ecological Corridor</text>
+
+      <!-- South Side: Logistics & Agritech Hub -->
+      <polygon points="40,230 220,240 200,340 30,330" fill="#EBF5FB" stroke="#2980B9" stroke-width="2"/>
+      <text x="120" y="285" font-family="Inter, sans-serif" font-size="10" font-weight="800" fill="#1A5276">LOGISTICS PARK</text>
+      <text x="120" y="300" font-family="Inter, sans-serif" font-size="8" fill="#2471A3">Cold Chain &amp; Warehousing</text>
+
+      <polygon points="220,240 420,250 400,350 200,340" fill="#FEF9E7" stroke="#F39C12" stroke-width="2"/>
+      <text x="310" y="285" font-family="Inter, sans-serif" font-size="10" font-weight="800" fill="#B7950B">SECTOR 14 (RESIDENTIAL)</text>
+      <text x="310" y="300" font-family="Inter, sans-serif" font-size="8" fill="#7D6608">Reconstituted Titles</text>
+
+      <polygon points="420,250 580,260 560,350 400,350" fill="#D5F5E3" stroke="#27AE60" stroke-width="2"/>
+      <text x="490" y="285" font-family="Inter, sans-serif" font-size="10" font-weight="800" fill="#1E8449">RURAL BUFFER</text>
+      <text x="490" y="300" font-family="Inter, sans-serif" font-size="8" fill="#145A32">Protected Organic Zone</text>
+    </g>
+  </g>
+
+  <!-- Right: Land Pooling Metrics -->
+  <g transform="translate(750, 150)">
+    <rect width="390" height="470" rx="16" fill="#FFFFFF" stroke="#DEE2E6" stroke-width="1.5"/>
+    <rect width="390" height="45" rx="16" fill="#EAF2FA"/>
+    <text x="20" y="28" font-family="Inter, sans-serif" font-size="13" font-weight="800" fill="#1A5276">LAND POOLING ECONOMICS</text>
+
+    <g transform="translate(20, 65)">
+      <rect width="350" height="85" rx="10" fill="#EBF5FB" stroke="#2980B9" stroke-width="1"/>
+      <text x="15" y="28" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#1A5276">Pooled Land Reconstituted</text>
+      <text x="15" y="58" font-family="Inter, sans-serif" font-size="24" font-weight="900" fill="#2980B9">48,200 Acres</text>
+      <text x="335" y="58" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#2980B9" text-anchor="end">142 Villages</text>
+
+      <g transform="translate(0, 100)">
+        <rect width="350" height="85" rx="10" fill="#D5F5E3" stroke="#27AE60" stroke-width="1"/>
+        <text x="15" y="28" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#1E8449">Farmer Asset Value Multiplier</text>
+        <text x="15" y="58" font-family="Inter, sans-serif" font-size="24" font-weight="900" fill="#1E8449">6.4x Appreciation</text>
+        <text x="335" y="58" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#1E8449" text-anchor="end">Zero Forced Acquisition</text>
+      </g>
+
+      <g transform="translate(0, 200)">
+        <rect width="350" height="145" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+        <text x="15" y="25" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#1A5276">Democratic Land Assembly Model</text>
+        <text x="15" y="48" font-family="Inter, sans-serif" font-size="10" fill="#6C757D">Instead of compulsory acquisition under RFCTLARR,</text>
+        <text x="15" y="65" font-family="Inter, sans-serif" font-size="10" fill="#6C757D">farmers partner as urban co-developers,</text>
+        <text x="15" y="82" font-family="Inter, sans-serif" font-size="10" fill="#6C757D">retaining 60% developed plots with roads, electricity,</text>
+        <text x="15" y="99" font-family="Inter, sans-serif" font-size="10" fill="#6C757D">and piped water infrastructure pre-laid.</text>
+        <text x="15" y="125" font-family="Inter, sans-serif" font-size="10" font-weight="800" fill="#1E8449">Litigation Reduced by 94%</text>
+      </g>
+    </g>
+  </g>
+</svg>

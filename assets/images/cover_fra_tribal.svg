@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="forestGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F2F9F4"/>
+    </linearGradient>
+    <linearGradient id="greenAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#145A32"/>
+      <stop offset="100%" stop-color="#1E8449"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="800" fill="url(#forestGrad)"/>
+  <rect x="0" y="0" width="600" height="8" fill="url(#greenAccent)"/>
+
+  <!-- Tricolor Bar -->
+  <rect x="40" y="30" width="80" height="3" fill="#FF9933"/>
+  <rect x="120" y="30" width="80" height="3" fill="#DEE2E6"/>
+  <rect x="200" y="30" width="80" height="3" fill="#138808"/>
+
+  <!-- Header Emblem -->
+  <g transform="translate(300, 110)" text-anchor="middle">
+    <circle cx="0" cy="0" r="30" fill="#E9F7EF" stroke="#1E8449" stroke-width="1.5"/>
+    <!-- Ashoka Stambh Stylized -->
+    <path d="M-6,-14 L6,-14 L8,-4 L6,12 L-6,12 L-8,-4 Z" fill="#145A32"/>
+    <circle cx="0" cy="0" r="7" fill="#F39C12"/>
+    <text y="46" font-family="Inter, sans-serif" font-size="10" font-weight="700" letter-spacing="2" fill="#145A32">MINISTRY OF TRIBAL AFFAIRS &amp; MoEFCC</text>
+    <text y="60" font-family="Inter, sans-serif" font-size="9" font-weight="500" letter-spacing="1" fill="#6C757D">NATIONAL RESEARCH &amp; POLICY CELL</text>
+  </g>
+
+  <line x1="60" y1="200" x2="540" y2="200" stroke="#D1E7DD" stroke-width="1"/>
+
+  <!-- Title -->
+  <text x="60" y="255" font-family="Inter, sans-serif" font-size="28" font-weight="800" fill="#145A32" line-height="1.25">
+    <tspan x="60" dy="0">Tribal Land Rights</tspan>
+    <tspan x="60" dy="36">Under FRA 2006:</tspan>
+    <tspan x="60" dy="36" fill="#1E8449">Convergence with DILRMP</tspan>
+  </text>
+  <text x="60" y="375" font-family="Inter, sans-serif" font-size="13" font-weight="600" fill="#D4890F" letter-spacing="1">
+    COMMUNITY FOREST RESOURCE (CFR) GOVERNANCE &amp; CADASTRAL MAPPING
+  </text>
+
+  <!-- Illustration Graphic: Forest Tree & Scales of Justice -->
+  <g transform="translate(150, 420)">
+    <!-- Tree Leaves Background -->
+    <circle cx="150" cy="110" r="95" fill="#E9F7EF" stroke="#A3E4D7" stroke-width="1.5"/>
+    <path d="M150,40 C120,40 100,70 100,100 C100,130 130,170 150,190 C170,170 200,130 200,100 C200,70 180,40 150,40 Z" fill="#1E8449" opacity="0.15"/>
+    
+    <!-- Scales of Justice Symbol -->
+    <path d="M150,55 V175 M110,85 H190" stroke="#145A32" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="150" cy="55" r="5" fill="#F39C12"/>
+    <!-- Left Pan -->
+    <path d="M110,85 L90,125 M110,85 L130,125" stroke="#1E8449" stroke-width="1.5"/>
+    <path d="M85,125 Q110,140 135,125" stroke="#1E8449" stroke-width="2.5" fill="none"/>
+    <!-- Right Pan -->
+    <path d="M190,85 L170,125 M190,85 L210,125" stroke="#1E8449" stroke-width="1.5"/>
+    <path d="M165,125 Q190,140 215,125" stroke="#1E8449" stroke-width="2.5" fill="none"/>
+    
+    <!-- Base -->
+    <rect x="135" y="175" width="30" height="8" rx="2" fill="#145A32"/>
+  </g>
+
+  <!-- Key Statistics Banner -->
+  <g transform="translate(60, 610)">
+    <rect width="480" height="60" rx="8" fill="#FFFFFF" stroke="#D1E7DD" stroke-width="1"/>
+    <text x="30" y="28" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#145A32">Coverage:</text>
+    <text x="30" y="45" font-family="Inter, sans-serif" font-size="10" fill="#6C757D">Jharkhand &amp; Chhattisgarh (24 Dists)</text>
+    
+    <line x1="240" y1="10" x2="240" y2="50" stroke="#E2E8F0" stroke-width="1"/>
+    
+    <text x="270" y="28" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#145A32">Titles Issued:</text>
+    <text x="270" y="45" font-family="Inter, sans-serif" font-size="10" fill="#6C757D">1.2 Million Ha CFR Validated</text>
+  </g>
+
+  <line x1="60" y1="700" x2="540" y2="700" stroke="#D1E7DD" stroke-width="1"/>
+  <text x="60" y="730" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#145A32">TATA INSTITUTE OF SOCIAL SCIENCES &amp; NLUD LEGAL REVIEWS</text>
+  <text x="540" y="730" font-family="Inter, sans-serif" font-size="12" font-weight="800" fill="#1E8449" text-anchor="end">2024 EDITION</text>
+</svg>
