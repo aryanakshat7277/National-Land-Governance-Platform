@@ -1,0 +1,176 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F8FAFC"/>
+    </linearGradient>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1A5276"/>
+      <stop offset="100%" stop-color="#2874A6"/>
+    </linearGradient>
+    <linearGradient id="goldSeal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F39C12"/>
+      <stop offset="100%" stop-color="#D68910"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="#EDF2F7"/>
+
+  <!-- Card Body -->
+  <g filter="url(#cardShadow)">
+    <rect x="50" y="30" width="700" height="540" rx="16" fill="url(#cardBg)" stroke="#CBD5E1" stroke-width="2"/>
+    <!-- Outer Ornamental Border -->
+    <rect x="62" y="42" width="676" height="516" rx="10" fill="none" stroke="#E2E8F0" stroke-width="1.5" stroke-dasharray="6,4"/>
+  </g>
+
+  <!-- Header Banner -->
+  <rect x="66" y="46" width="668" height="85" rx="8" fill="url(#headerGrad)"/>
+  
+  <!-- Tricolor Accent Line -->
+  <rect x="66" y="131" width="222.6" height="4" fill="#FF9933"/>
+  <rect x="288.6" y="131" width="222.6" height="4" fill="#FFFFFF"/>
+  <rect x="511.2" y="131" width="222.8" height="4" fill="#138808"/>
+
+  <!-- Ashoka Chakra Symbol in Header -->
+  <circle cx="115" cy="88" r="28" fill="#FFFFFF" opacity="0.15"/>
+  <circle cx="115" cy="88" r="24" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+  <circle cx="115" cy="88" r="6" fill="#FFFFFF"/>
+  <!-- Spokes -->
+  <g stroke="#FFFFFF" stroke-width="1.5">
+    <line x1="115" y1="64" x2="115" y2="112"/>
+    <line x1="91" y1="88" x2="139" y2="88"/>
+    <line x1="98" y1="71" x2="132" y2="105"/>
+    <line x1="98" y1="105" x2="132" y2="71"/>
+  </g>
+
+  <!-- Title Text -->
+  <text x="160" y="78" font-family="'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="800" fill="#FFFFFF" letter-spacing="1">SVAMITVA PROPERTY CARD • सम्पत्ति पत्रक</text>
+  <text x="160" y="102" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" fill="#E2E8F0" letter-spacing="0.5">Ministry of Panchayati Raj &amp; Survey of India | Government of India</text>
+  <rect x="600" y="65" width="115" height="28" rx="14" fill="#1E8449"/>
+  <text x="657" y="83" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">✓ VERIFIED RECORD</text>
+
+  <!-- ULPIN Banner -->
+  <g transform="translate(85, 150)">
+    <rect width="630" height="44" rx="8" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1.5"/>
+    <text x="20" y="27" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#64748B">BHU-AADHAAR (ULPIN):</text>
+    <text x="180" y="28" font-family="'Courier New', monospace" font-size="16" font-weight="800" fill="#1A5276" letter-spacing="2">UP-28-LKO-4091-8842</text>
+    <rect x="495" y="10" width="120" height="24" rx="12" fill="#EBF5FB" stroke="#2874A6" stroke-width="1"/>
+    <text x="555" y="26" font-family="'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="700" fill="#1A5276" text-anchor="middle">RTK CORS GEO-REF</text>
+  </g>
+
+  <!-- Parcel & Owner Info (Left Column) -->
+  <g transform="translate(85, 210)">
+    <!-- Section Header -->
+    <rect width="360" height="28" rx="4" fill="#EBF5FB"/>
+    <text x="12" y="19" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#1A5276">PARCEL &amp; OWNERSHIP DETAILS (विवरण)</text>
+
+    <!-- Details Grid -->
+    <g transform="translate(10, 42)" font-family="'Segoe UI', Roboto, sans-serif" font-size="12">
+      <!-- Row 1 -->
+      <text x="0" y="16" fill="#64748B" font-weight="500">Owner Name(s):</text>
+      <text x="140" y="16" fill="#0F172A" font-weight="700">Ramwati Devi &amp; Rameshwar Sharma</text>
+      <line x1="0" y1="26" x2="340" y2="26" stroke="#F1F5F9" stroke-width="1"/>
+
+      <!-- Row 2 -->
+      <text x="0" y="48" fill="#64748B" font-weight="500">Gram Panchayat:</text>
+      <text x="140" y="48" fill="#0F172A" font-weight="600">Bakshi Ka Talab, Lucknow (UP)</text>
+      <line x1="0" y1="58" x2="340" y2="58" stroke="#F1F5F9" stroke-width="1"/>
+
+      <!-- Row 3 -->
+      <text x="0" y="80" fill="#64748B" font-weight="500">Cadastral Plot No:</text>
+      <text x="140" y="80" fill="#0F172A" font-weight="700">Abadi Plot No. 412/1</text>
+      <line x1="0" y1="90" x2="340" y2="90" stroke="#F1F5F9" stroke-width="1"/>
+
+      <!-- Row 4 -->
+      <text x="0" y="112" fill="#64748B" font-weight="500">Total Parcel Area:</text>
+      <text x="140" y="112" fill="#1E8449" font-weight="800">245.80 Sq. Metres (2,645.7 Sq. Ft)</text>
+      <line x1="0" y1="122" x2="340" y2="122" stroke="#F1F5F9" stroke-width="1"/>
+
+      <!-- Row 5 -->
+      <text x="0" y="144" fill="#64748B" font-weight="500">Property Category:</text>
+      <text x="140" y="144" fill="#0F172A" font-weight="600">Rural Residential (Gram Kantham)</text>
+      <line x1="0" y1="154" x2="340" y2="154" stroke="#F1F5F9" stroke-width="1"/>
+
+      <!-- Row 6 -->
+      <text x="0" y="176" fill="#64748B" font-weight="500">Drone Survey Date:</text>
+      <text x="140" y="176" fill="#0F172A" font-weight="600">14-Nov-2023 (Survey of India Batch 4)</text>
+    </g>
+  </g>
+
+  <!-- Cadastral Map Polygon Preview (Right Column) -->
+  <g transform="translate(470, 210)">
+    <rect width="245" height="185" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+    <rect x="0" y="0" width="245" height="26" rx="8" fill="#F1F5F9"/>
+    <text x="12" y="17" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#475569">GEO-SURVEY PARCEL BOUNDARY</text>
+
+    <!-- Grid lines -->
+    <path d="M 30,35 L 30,175 M 70,35 L 70,175 M 110,35 L 110,175 M 150,35 L 150,175 M 190,35 L 190,175 M 230,35 L 230,175" stroke="#E2E8F0" stroke-width="0.8"/>
+    <path d="M 10,60 L 235,60 M 10,95 L 235,95 M 10,130 L 235,130 M 10,165 L 235,165" stroke="#E2E8F0" stroke-width="0.8"/>
+
+    <!-- Surrounding Parcels -->
+    <polygon points="20,45 80,42 75,95 20,85" fill="#E2E8F0" stroke="#94A3B8" stroke-width="1" opacity="0.6"/>
+    <polygon points="175,50 235,55 225,120 165,115" fill="#E2E8F0" stroke="#94A3B8" stroke-width="1" opacity="0.6"/>
+    
+    <!-- Active Parcel (Plot 412/1) -->
+    <polygon points="85,60 165,68 155,145 78,135" fill="#D4EFDF" stroke="#1E8449" stroke-width="2.5"/>
+    
+    <!-- Vertices -->
+    <circle cx="85" cy="60" r="4" fill="#C0392B"/>
+    <circle cx="165" cy="68" r="4" fill="#C0392B"/>
+    <circle cx="155" cy="145" r="4" fill="#C0392B"/>
+    <circle cx="78" cy="135" r="4" fill="#C0392B"/>
+
+    <text x="122" y="105" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="800" fill="#1E8449" text-anchor="middle">PLOT 412/1</text>
+    <text x="122" y="118" font-family="'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="600" fill="#2E7D32" text-anchor="middle">245.8 m²</text>
+    <text x="122" y="178" font-family="'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="500" fill="#64748B" text-anchor="middle">EPSG: 4326 | WGS84 Datum</text>
+  </g>
+
+  <!-- Bottom Verification Footer -->
+  <g transform="translate(85, 430)">
+    <rect width="630" height="110" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+
+    <!-- Simulated QR Code -->
+    <g transform="translate(18, 15)">
+      <rect width="80" height="80" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
+      <!-- QR Pattern -->
+      <rect x="6" y="6" width="22" height="22" fill="#0F172A"/>
+      <rect x="10" y="10" width="14" height="14" fill="#FFFFFF"/>
+      <rect x="13" y="13" width="8" height="8" fill="#0F172A"/>
+
+      <rect x="52" y="6" width="22" height="22" fill="#0F172A"/>
+      <rect x="56" y="10" width="14" height="14" fill="#FFFFFF"/>
+      <rect x="59" y="13" width="8" height="8" fill="#0F172A"/>
+
+      <rect x="6" y="52" width="22" height="22" fill="#0F172A"/>
+      <rect x="10" y="56" width="14" height="14" fill="#FFFFFF"/>
+      <rect x="13" y="59" width="8" height="8" fill="#0F172A"/>
+
+      <rect x="34" y="12" width="10" height="6" fill="#0F172A"/>
+      <rect x="12" y="34" width="8" height="12" fill="#0F172A"/>
+      <rect x="36" y="36" width="12" height="12" fill="#0F172A"/>
+      <rect x="55" y="34" width="18" height="8" fill="#0F172A"/>
+      <rect x="36" y="56" width="18" height="18" fill="#0F172A"/>
+      <rect x="60" y="55" width="12" height="12" fill="#0F172A"/>
+    </g>
+
+    <!-- QR Explanatory Text -->
+    <text x="110" y="42" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#1A5276">DIGITALLY SECURED WITH NIC PUBLIC KEY</text>
+    <text x="110" y="60" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="500" fill="#64748B">Scan to verify authentic title deed on e-GramSwaraj / SVAMITVA portal.</text>
+    <text x="110" y="76" font-family="'Courier New', monospace" font-size="9" fill="#94A3B8">SHA-256: e82b79a1d4...f993bc21</text>
+
+    <!-- Authority Signature & Stamp -->
+    <g transform="translate(440, 15)">
+      <circle cx="130" cy="40" r="32" fill="none" stroke="#2874A6" stroke-width="1.5" stroke-dasharray="4,2"/>
+      <text x="130" y="36" font-family="'Segoe UI', Roboto, sans-serif" font-size="8" font-weight="800" fill="#2874A6" text-anchor="middle">SUB-DIVISIONAL</text>
+      <text x="130" y="46" font-family="'Segoe UI', Roboto, sans-serif" font-size="8" font-weight="800" fill="#2874A6" text-anchor="middle">MAGISTRATE (SDM)</text>
+      <!-- Stylized signature -->
+      <path d="M 60,45 Q 85,20 110,48 T 160,35 T 195,50" fill="none" stroke="#1A5276" stroke-width="2" stroke-linecap="round"/>
+      <text x="130" y="76" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">Competent Revenue Authority</text>
+      <text x="130" y="88" font-family="'Segoe UI', Roboto, sans-serif" font-size="8.5" font-weight="500" fill="#64748B" text-anchor="middle">Govt. of Uttar Pradesh</text>
+    </g>
+  </g>
+</svg>

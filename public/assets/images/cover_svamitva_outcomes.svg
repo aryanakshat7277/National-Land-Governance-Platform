@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="svamitvaBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="50%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#FCD34D"/>
+    </linearGradient>
+    <linearGradient id="innerCard" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F8FAFC"/>
+    </linearGradient>
+    <filter id="boxShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="800" fill="url(#svamitvaBg)"/>
+
+  <!-- Geometric Grid Accent -->
+  <g stroke="#38BDF8" stroke-width="0.8" opacity="0.12">
+    <circle cx="500" cy="180" r="220" fill="none"/>
+    <circle cx="500" cy="180" r="160" fill="none"/>
+    <circle cx="500" cy="180" r="100" fill="none"/>
+  </g>
+
+  <!-- Top Institutional Bar -->
+  <g transform="translate(50, 45)">
+    <rect x="0" y="0" width="8" height="34" rx="4" fill="#FF9933"/>
+    <rect x="0" y="11" width="8" height="12" fill="#FFFFFF"/>
+    <rect x="0" y="23" width="8" height="11" rx="4" fill="#138808"/>
+    
+    <text x="22" y="16" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#E2E8F0" letter-spacing="1.5">NATIONAL INSTITUTE OF PUBLIC FINANCE AND POLICY (NIPFP)</text>
+    <text x="22" y="32" font-family="'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="600" fill="url(#goldGradient)" letter-spacing="1">MINISTRY OF PANCHAYATI RAJ &amp; NITI AAYOG COLLABORATION</text>
+  </g>
+
+  <!-- Badge -->
+  <g transform="translate(50, 115)">
+    <rect width="190" height="26" rx="4" fill="url(#goldGradient)"/>
+    <text x="14" y="18" font-family="'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="800" fill="#0F172A" letter-spacing="0.8">ECONOMIC IMPACT EVALUATION</text>
+    <text x="205" y="18" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#93C5FD">POLICY BRIEF 2024</text>
+  </g>
+
+  <!-- Title & Subtitle -->
+  <g transform="translate(50, 180)">
+    <text x="0" y="36" font-family="'Segoe UI', Roboto, sans-serif" font-size="34" font-weight="900" fill="#FFFFFF" letter-spacing="-0.5">Economic Upliftment</text>
+    <text x="0" y="78" font-family="'Segoe UI', Roboto, sans-serif" font-size="34" font-weight="900" fill="#F8FAFC" letter-spacing="-0.5">Through SVAMITVA</text>
+    <text x="0" y="120" font-family="'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="900" fill="url(#goldGradient)" letter-spacing="-0.5">Unlocking Rural Collateral &amp; Credit</text>
+
+    <text x="0" y="160" font-family="'Segoe UI', Roboto, sans-serif" font-size="13.5" font-weight="400" fill="#CBD5E1" width="500">
+      <tspan x="0" dy="0">Quantitative Assessment of ₹1.8 Trillion in Unlocked Rural Wealth,</tspan>
+      <tspan x="0" dy="22">Formal Bank Credit Flow, and Gram Panchayat Tax Revenue Growth</tspan>
+    </text>
+  </g>
+
+  <!-- Central Visual Infographic Card -->
+  <g transform="translate(50, 385)" filter="url(#boxShadow)">
+    <rect width="500" height="250" rx="12" fill="url(#innerCard)" stroke="#CBD5E1" stroke-width="1.5"/>
+
+    <rect x="0" y="0" width="500" height="34" rx="12" fill="#F1F5F9"/>
+    <text x="20" y="22" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#0F172A">MACRO-ECONOMIC IMPACT INDICATORS (POST-SVAMITVA TITLING)</text>
+
+    <!-- 3 Metrics Grid -->
+    <g transform="translate(20, 50)">
+      <!-- Metric 1 -->
+      <g transform="translate(0, 0)">
+        <rect width="140" height="110" rx="8" fill="#ECFDF5" stroke="#10B981" stroke-width="1"/>
+        <text x="14" y="24" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" fill="#065F46">COLLATERAL VALUE</text>
+        <text x="14" y="62" font-family="'Segoe UI', Roboto, sans-serif" font-size="30" font-weight="900" fill="#059669">₹1.84 T</text>
+        <text x="14" y="84" font-family="'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="600" fill="#064E3B">Dead Capital Monetized</text>
+        <text x="14" y="98" font-family="'Segoe UI', Roboto, sans-serif" font-size="8.5" fill="#065F46">1.25 Crore Property Cards</text>
+      </g>
+
+      <!-- Metric 2 -->
+      <g transform="translate(160, 0)">
+        <rect width="140" height="110" rx="8" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1"/>
+        <text x="14" y="24" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" fill="#1E40AF">FORMAL BANK LOANS</text>
+        <text x="14" y="62" font-family="'Segoe UI', Roboto, sans-serif" font-size="30" font-weight="900" fill="#2563EB">+312%</text>
+        <text x="14" y="84" font-family="'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="600" fill="#1E3A8A">Commercial &amp; RRB Mortgages</text>
+        <text x="14" y="98" font-family="'Segoe UI', Roboto, sans-serif" font-size="8.5" fill="#1E40AF">Average loan size: ₹3.4 Lakhs</text>
+      </g>
+
+      <!-- Metric 3 -->
+      <g transform="translate(320, 0)">
+        <rect width="140" height="110" rx="8" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1"/>
+        <text x="14" y="24" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" fill="#92400E">PANCHAYAT REVENUE</text>
+        <text x="14" y="62" font-family="'Segoe UI', Roboto, sans-serif" font-size="30" font-weight="900" fill="#D97706">+48.6%</text>
+        <text x="14" y="84" font-family="'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="600" fill="#78350F">Own Source Revenue (OSR)</text>
+        <text x="14" y="98" font-family="'Segoe UI', Roboto, sans-serif" font-size="8.5" fill="#92400E">Property tax register up-to-date</text>
+      </g>
+    </g>
+
+    <!-- Bottom summary tag inside card -->
+    <rect x="20" y="175" width="460" height="58" rx="6" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+    <text x="35" y="196" font-family="'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="700" fill="#0F172A">NITI Aayog Assessment:</text>
+    <text x="35" y="215" font-family="'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="500" fill="#475569">SVAMITVA has demonstrated the highest benefit-cost ratio (1:14.2) among all rural infrastructure</text>
+    <text x="35" y="228" font-family="'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="500" fill="#475569">interventions since 2014, catalyzing rural micro-enterprises and women co-ownership.</text>
+  </g>
+
+  <!-- Authors & Publication Meta -->
+  <g transform="translate(50, 680)">
+    <line x1="0" y1="0" x2="500" y2="0" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="1"/>
+    
+    <text x="0" y="24" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">Principal Economists &amp; Study Team:</text>
+    <text x="0" y="44" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="400" fill="#CBD5E1">Prof. Ila Patnaik (NIPFP) • Dr. Arvind Virmani • NITI Aayog Rural Development Vertical</text>
+    
+    <g transform="translate(0, 68)">
+      <text x="0" y="14" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="500" fill="#93C5FD">Working Paper Series No. 342</text>
+      <text x="500" y="14" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#CBD5E1" text-anchor="end">Ministry of Panchayati Raj Publication</text>
+    </g>
+  </g>
+</svg>

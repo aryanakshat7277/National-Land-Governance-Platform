@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="climateBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E3A24"/>
+      <stop offset="60%" stop-color="#19543E"/>
+      <stop offset="100%" stop-color="#236B50"/>
+    </linearGradient>
+    <linearGradient id="amberAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F39C12"/>
+      <stop offset="100%" stop-color="#F7DC6F"/>
+    </linearGradient>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#F8FAFC" stop-opacity="0.9"/>
+    </linearGradient>
+    <filter id="cShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="15" flood-color="#000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="800" fill="url(#climateBg)"/>
+
+  <!-- Contour lines pattern -->
+  <g stroke="#52BE80" stroke-width="0.8" opacity="0.15" fill="none">
+    <ellipse cx="500" cy="200" rx="300" ry="180"/>
+    <ellipse cx="500" cy="200" rx="240" ry="140"/>
+    <ellipse cx="500" cy="200" rx="180" ry="100"/>
+    <ellipse cx="500" cy="200" rx="120" ry="60"/>
+    <ellipse cx="100" cy="650" rx="280" ry="150"/>
+    <ellipse cx="100" cy="650" rx="200" ry="100"/>
+  </g>
+
+  <!-- Top Institutional Bar -->
+  <g transform="translate(50, 45)">
+    <rect x="0" y="0" width="8" height="34" rx="4" fill="#FF9933"/>
+    <rect x="0" y="11" width="8" height="12" fill="#FFFFFF"/>
+    <rect x="0" y="23" width="8" height="11" rx="4" fill="#138808"/>
+    
+    <text x="22" y="16" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#E2E8F0" letter-spacing="1.5">ICAR • MOEFCC • DEPT. OF LAND RESOURCES</text>
+    <text x="22" y="32" font-family="'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="600" fill="url(#amberAccent)" letter-spacing="1">NATIONAL APPLIED LAND CLIMATE WORKING GROUP</text>
+  </g>
+
+  <!-- Badge -->
+  <g transform="translate(50, 115)">
+    <rect width="170" height="26" rx="4" fill="url(#amberAccent)"/>
+    <text x="14" y="18" font-family="'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="800" fill="#0F172A" letter-spacing="0.8">RESEARCH MONOGRAPH</text>
+    <text x="190" y="18" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#A7F3D0">CLIMATE &amp; AGRO-CADASTRE 2024</text>
+  </g>
+
+  <!-- Title & Subtitle -->
+  <g transform="translate(50, 180)">
+    <text x="0" y="36" font-family="'Segoe UI', Roboto, sans-serif" font-size="34" font-weight="900" fill="#FFFFFF" letter-spacing="-0.5">Climate Vulnerability</text>
+    <text x="0" y="78" font-family="'Segoe UI', Roboto, sans-serif" font-size="34" font-weight="900" fill="#F8FAFC" letter-spacing="-0.5">&amp; Land Use Adaptation</text>
+    <text x="0" y="120" font-family="'Segoe UI', Roboto, sans-serif" font-size="30" font-weight="900" fill="url(#amberAccent)" letter-spacing="-0.5">In Rainfed Agro-Ecosystems</text>
+
+    <text x="0" y="160" font-family="'Segoe UI', Roboto, sans-serif" font-size="13.5" font-weight="400" fill="#D1FAE5" width="500">
+      <tspan x="0" dy="0">High-Resolution Geospatial Mapping of Drought Frequency,</tspan>
+      <tspan x="0" dy="22">Aquifer Depletion, and Cadastral-Level Crop Substitution</tspan>
+    </text>
+  </g>
+
+  <!-- Central Visual Infographic Card -->
+  <g transform="translate(50, 385)" filter="url(#cShadow)">
+    <rect width="500" height="250" rx="12" fill="url(#cardBg)" stroke="#CBD5E1" stroke-width="1.5"/>
+
+    <rect x="0" y="0" width="500" height="34" rx="12" fill="#E2E8F0"/>
+    <text x="20" y="22" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#145A32">PARCEL-LEVEL CLIMATE STRESS INDICATORS (CENTRAL INDIA PILOT)</text>
+
+    <!-- 3 Metrics Grid -->
+    <g transform="translate(20, 50)">
+      <!-- Metric 1 -->
+      <g transform="translate(0, 0)">
+        <rect width="140" height="110" rx="8" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1"/>
+        <text x="14" y="24" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" fill="#92400E">DROUGHT EXPOSURE</text>
+        <text x="14" y="62" font-family="'Segoe UI', Roboto, sans-serif" font-size="32" font-weight="900" fill="#B45309">64.2%</text>
+        <text x="14" y="84" font-family="'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="600" fill="#78350F">Bundelkhand &amp; Marathwada</text>
+        <text x="14" y="98" font-family="'Segoe UI', Roboto, sans-serif" font-size="8.5" fill="#92400E">SPEI Index &lt; -1.5 (High)</text>
+      </g>
+
+      <!-- Metric 2 -->
+      <g transform="translate(160, 0)">
+        <rect width="140" height="110" rx="8" fill="#FEE2E2" stroke="#EF4444" stroke-width="1"/>
+        <text x="14" y="24" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" fill="#991B1B">SOIL MOISTURE DEFICIT</text>
+        <text x="14" y="62" font-family="'Segoe UI', Roboto, sans-serif" font-size="32" font-weight="900" fill="#DC2626">-38%</text>
+        <text x="14" y="84" font-family="'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="600" fill="#7F1D1D">NASA SMAP Remote Sensing</text>
+        <text x="14" y="98" font-family="'Segoe UI', Roboto, sans-serif" font-size="8.5" fill="#991B1B">Topsoil 0-10cm root zone</text>
+      </g>
+
+      <!-- Metric 3 -->
+      <g transform="translate(320, 0)">
+        <rect width="140" height="110" rx="8" fill="#D1FAE5" stroke="#10B981" stroke-width="1"/>
+        <text x="14" y="24" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" fill="#065F46">ADAPTIVE CROPPING</text>
+        <text x="14" y="62" font-family="'Segoe UI', Roboto, sans-serif" font-size="32" font-weight="900" fill="#059669">+4.8x</text>
+        <text x="14" y="84" font-family="'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="600" fill="#064E3B">Millet &amp; Pulses Conversion</text>
+        <text x="14" y="98" font-family="'Segoe UI', Roboto, sans-serif" font-size="8.5" fill="#065F46">Net income resilience score</text>
+      </g>
+    </g>
+
+    <!-- Bottom summary tag inside card -->
+    <rect x="20" y="175" width="460" height="58" rx="6" fill="#F1F5F9"/>
+    <text x="35" y="196" font-family="'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="700" fill="#1E293B">Key Policy Recommendation for MoRD:</text>
+    <text x="35" y="215" font-family="'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="500" fill="#475569">Integrate agro-climatic stress layers directly with RoR land records to auto-trigger PMFBY payouts</text>
+    <text x="35" y="228" font-family="'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="500" fill="#475569">and incentivize watershed development under MGNREGS land levelling schemes.</text>
+  </g>
+
+  <!-- Authors & Publication Meta -->
+  <g transform="translate(50, 680)">
+    <line x1="0" y1="0" x2="500" y2="0" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="1"/>
+    
+    <text x="0" y="24" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">Lead Authors &amp; Scientific Reviewers:</text>
+    <text x="0" y="44" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="400" fill="#A7F3D0">Dr. M. S. Swaminathan Chair • TERI Climate Resilience Lab • ISRO NRSC Hydrology Div.</text>
+    
+    <g transform="translate(0, 68)">
+      <text x="0" y="14" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="500" fill="#D1FAE5">DOI: 10.1038/s41558-024-01982-x</text>
+      <text x="500" y="14" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#CBD5E1" text-anchor="end">ISBN: 978-81-948210-9-1</text>
+    </g>
+  </g>
+</svg>

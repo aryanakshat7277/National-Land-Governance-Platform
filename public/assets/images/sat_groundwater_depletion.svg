@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="gwBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F7FAFC"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#gwBg)"/>
+  <rect x="0" y="0" width="400" height="6" fill="#FF9933"/>
+  <rect x="400" y="0" width="400" height="6" fill="#E2E8F0"/>
+  <rect x="800" y="0" width="400" height="6" fill="#138808"/>
+
+  <!-- Title Header -->
+  <g transform="translate(60, 50)">
+    <rect width="1080" height="70" rx="12" fill="#FFFFFF" stroke="#DEE2E6" stroke-width="1.5"/>
+    <circle cx="45" cy="35" r="22" fill="#2E86C1"/>
+    <!-- Water Drop Icon -->
+    <path d="M45,20 C45,20 35,32 35,38 C35,44 39,48 45,48 C51,48 55,44 55,38 C55,32 45,20 45,20 Z" fill="#FFFFFF"/>
+    <text x="80" y="32" font-family="Inter, sans-serif" font-size="18" font-weight="800" fill="#1A5276">NATIONAL GROUNDWATER &amp; AQUIFER STRESS CADASTRE 2024</text>
+    <text x="80" y="52" font-family="Inter, sans-serif" font-size="12" font-weight="500" fill="#6C757D">Central Ground Water Board (CGWB) &amp; ISRO Bhuvan Multi-Temporal GRACE Satellite Observations</text>
+    <rect x="940" y="20" width="120" height="30" rx="6" fill="#EBF5FB" stroke="#2980B9" stroke-width="1"/>
+    <text x="1000" y="40" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#1A5276" text-anchor="middle">ATAL JAL INTEGRATED</text>
+  </g>
+
+  <!-- Left Side: Interactive Stress Map of India Basins -->
+  <g transform="translate(60, 150)">
+    <rect width="660" height="470" rx="16" fill="#FFFFFF" stroke="#DEE2E6" stroke-width="1.5"/>
+    <rect width="660" height="45" rx="16" fill="#EAF2FA"/>
+    <text x="20" y="28" font-family="Inter, sans-serif" font-size="13" font-weight="800" fill="#1A5276">PAN-INDIA BASIN VULNERABILITY ZONES</text>
+
+    <!-- Geographic Map Representation -->
+    <g transform="translate(30, 65)">
+      <!-- Indus Basin Over-Exploited (Punjab/Haryana/NW) -->
+      <path d="M120,40 Q220,30 280,110 Q240,160 140,150 Z" fill="#FADBD8" stroke="#E74C3C" stroke-width="2.5"/>
+      <text x="200" y="95" font-family="Inter, sans-serif" font-size="11" font-weight="800" fill="#C0392B" text-anchor="middle">NW Over-Exploited (&gt;100%)</text>
+      <text x="200" y="112" font-family="Inter, sans-serif" font-size="9" fill="#922B21" text-anchor="middle">Punjab, Haryana, W-Rajasthan</text>
+
+      <!-- Gangetic Basin (Critical / Semi-Critical) -->
+      <path d="M260,110 Q450,100 540,180 Q380,210 240,160 Z" fill="#FCF3CF" stroke="#F1C40F" stroke-width="2.5"/>
+      <text x="390" y="150" font-family="Inter, sans-serif" font-size="11" font-weight="800" fill="#B7950B" text-anchor="middle">Gangetic Basin (70–90%)</text>
+      <text x="390" y="167" font-family="Inter, sans-serif" font-size="9" fill="#7D6608" text-anchor="middle">UP, Bihar Alluvial Plains</text>
+
+      <!-- Peninsular Hard Rock (Semi-Critical) -->
+      <path d="M160,180 Q320,180 340,320 Q200,340 160,240 Z" fill="#FEF9E7" stroke="#F39C12" stroke-width="2"/>
+      <text x="250" y="245" font-family="Inter, sans-serif" font-size="11" font-weight="800" fill="#D4AC0D" text-anchor="middle">Deccan Basalt Plateau</text>
+      <text x="250" y="262" font-family="Inter, sans-serif" font-size="9" fill="#7D6608" text-anchor="middle">Maharashtra, Karnataka Hard Rock</text>
+
+      <!-- Southern & Coastal (Safe / Recharged) -->
+      <path d="M190,320 Q340,300 320,380 Q220,390 190,320 Z" fill="#E8F8F5" stroke="#2ECC71" stroke-width="2"/>
+      <text x="260" y="355" font-family="Inter, sans-serif" font-size="10" font-weight="800" fill="#1E8449" text-anchor="middle">Peninsular Watershed Safe</text>
+
+      <!-- North East & Eastern Ghats Safe -->
+      <path d="M460,160 Q580,120 580,240 Q460,260 420,200 Z" fill="#EAFAF1" stroke="#27AE60" stroke-width="2"/>
+      <text x="500" y="200" font-family="Inter, sans-serif" font-size="10" font-weight="800" fill="#1E8449" text-anchor="middle">NE &amp; Brahmaputra</text>
+      <text x="500" y="215" font-family="Inter, sans-serif" font-size="9" fill="#145A32" text-anchor="middle">Abundant Aquifer Yield</text>
+    </g>
+  </g>
+
+  <!-- Right Side: National Statistics & Policy Triggers -->
+  <g transform="translate(750, 150)">
+    <rect width="390" height="470" rx="16" fill="#FFFFFF" stroke="#DEE2E6" stroke-width="1.5"/>
+    <rect width="390" height="45" rx="16" fill="#EAF2FA"/>
+    <text x="20" y="28" font-family="Inter, sans-serif" font-size="13" font-weight="800" fill="#1A5276">AQUIFER SUMMARY &amp; POLICY DIRECTIVES</text>
+
+    <g transform="translate(20, 65)">
+      <!-- Stat 1 -->
+      <rect width="350" height="75" rx="10" fill="#FADBD8" stroke="#E74C3C" stroke-width="1"/>
+      <text x="15" y="28" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#922B21">Over-Exploited Assessment Units</text>
+      <text x="15" y="55" font-family="Inter, sans-serif" font-size="22" font-weight="900" fill="#C0392B">14% (1,006 Blocks)</text>
+      <text x="335" y="55" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#C0392B" text-anchor="end">Mandatory NOC</text>
+
+      <!-- Stat 2 -->
+      <g transform="translate(0, 90)">
+        <rect width="350" height="75" rx="10" fill="#FCF3CF" stroke="#F1C40F" stroke-width="1"/>
+        <text x="15" y="28" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#7D6608">Critical &amp; Semi-Critical Blocks</text>
+        <text x="15" y="55" font-family="Inter, sans-serif" font-size="22" font-weight="900" fill="#B7950B">17% (1,234 Blocks)</text>
+        <text x="335" y="55" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#B7950B" text-anchor="end">Micro-Irrigation</text>
+      </g>
+
+      <!-- Stat 3 -->
+      <g transform="translate(0, 180)">
+        <rect width="350" height="75" rx="10" fill="#E8F8F5" stroke="#2ECC71" stroke-width="1"/>
+        <text x="15" y="28" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#145A32">Safe &amp; Recharging Units</text>
+        <text x="15" y="55" font-family="Inter, sans-serif" font-size="22" font-weight="900" fill="#1E8449">67% (4,780 Blocks)</text>
+        <text x="335" y="55" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#1E8449" text-anchor="end">Sustainable</text>
+      </g>
+
+      <!-- Policy Recommendation Box -->
+      <g transform="translate(0, 270)">
+        <rect width="350" height="110" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+        <text x="15" y="25" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#1A5276">Evidence-Based Land Allocation Directive</text>
+        <text x="15" y="48" font-family="Inter, sans-serif" font-size="10" fill="#6C757D">All new industrial land conversions in over-exploited</text>
+        <text x="15" y="65" font-family="Inter, sans-serif" font-size="10" fill="#6C757D">blocks require 100% rooftop rainwater harvesting</text>
+        <text x="15" y="82" font-family="Inter, sans-serif" font-size="10" fill="#6C757D">and mandatory effluent recycling before title grant.</text>
+        <text x="15" y="99" font-family="Inter, sans-serif" font-size="9" font-weight="700" fill="#1A5276">Circular No. MoWR/CGWB/2024-11</text>
+      </g>
+    </g>
+  </g>
+</svg>

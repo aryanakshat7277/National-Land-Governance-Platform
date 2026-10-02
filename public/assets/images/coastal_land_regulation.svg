@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="crzBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F0F8FF"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#crzBg)"/>
+  <rect x="0" y="0" width="400" height="6" fill="#FF9933"/>
+  <rect x="400" y="0" width="400" height="6" fill="#E2E8F0"/>
+  <rect x="800" y="0" width="400" height="6" fill="#138808"/>
+
+  <g transform="translate(60, 50)">
+    <rect width="1080" height="70" rx="12" fill="#FFFFFF" stroke="#DEE2E6" stroke-width="1.5"/>
+    <circle cx="45" cy="35" r="22" fill="#16A085"/>
+    <!-- Wave Icon -->
+    <path d="M35,35 Q40,30 45,35 Q50,40 55,35" stroke="#FFFFFF" stroke-width="2.5" fill="none"/>
+    <text x="80" y="32" font-family="Inter, sans-serif" font-size="18" font-weight="800" fill="#1A5276">COASTAL REGULATION ZONE (CRZ 2019) SPATIAL GOVERNANCE CADASTRE</text>
+    <text x="80" y="52" font-family="Inter, sans-serif" font-size="12" font-weight="500" fill="#6C757D">Ministry of Environment, Forest &amp; Climate Change (MoEFCC) &amp; National Centre for Sustainable Coastal Management (NCSCM)</text>
+    <rect x="940" y="20" width="120" height="30" rx="6" fill="#E8F8F5" stroke="#1ABC9C" stroke-width="1"/>
+    <text x="1000" y="40" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#16A085" text-anchor="middle">CRZ NOTIFICATION</text>
+  </g>
+
+  <!-- Left: Cross-Sectional Spatial Cadastre -->
+  <g transform="translate(60, 150)">
+    <rect width="680" height="470" rx="16" fill="#FFFFFF" stroke="#DEE2E6" stroke-width="1.5"/>
+    <rect width="680" height="45" rx="16" fill="#EAF2FA"/>
+    <text x="20" y="28" font-family="Inter, sans-serif" font-size="13" font-weight="800" fill="#1A5276">COASTAL ZONATION &amp; DEVELOPMENT REGULATORY BUFFERS</text>
+
+    <g transform="translate(30, 70)">
+      <!-- Ocean / Water Body -->
+      <rect x="0" y="50" width="120" height="300" rx="6" fill="#D4E6F1" stroke="#2980B9" stroke-width="1.5"/>
+      <text x="60" y="200" font-family="Inter, sans-serif" font-size="12" font-weight="800" fill="#1A5276" text-anchor="middle" transform="rotate(-90 60 200)">ARABIAN SEA / BAY OF BENGAL</text>
+      <text x="60" y="225" font-family="Inter, sans-serif" font-size="9" fill="#2471A3" text-anchor="middle" transform="rotate(-90 60 225)">Low Tide Line (LTL)</text>
+
+      <!-- High Tide Line (HTL) marker line -->
+      <line x1="120" y1="30" x2="120" y2="370" stroke="#E74C3C" stroke-width="3" stroke-dasharray="6,4"/>
+      <text x="125" y="45" font-family="Inter, sans-serif" font-size="10" font-weight="800" fill="#C0392B">HTL LINE</text>
+
+      <!-- CRZ-I Eco-Sensitive (0 - 50m / Mangroves) -->
+      <rect x="120" y="50" width="130" height="300" fill="#D5F5E3" stroke="#27AE60" stroke-width="1.5"/>
+      <text x="185" y="110" font-family="Inter, sans-serif" font-size="12" font-weight="800" fill="#145A32" text-anchor="middle">CRZ-IA</text>
+      <text x="185" y="130" font-family="Inter, sans-serif" font-size="9" font-weight="700" fill="#196F3D" text-anchor="middle">Mangroves &amp; Corals</text>
+      <text x="185" y="150" font-family="Inter, sans-serif" font-size="8" fill="#1E8449" text-anchor="middle">Strict No-Development</text>
+      <text x="185" y="165" font-family="Inter, sans-serif" font-size="8" fill="#1E8449" text-anchor="middle">Zero Construction Zone</text>
+
+      <!-- CRZ-II Developed Urban (Built-up) -->
+      <rect x="250" y="50" width="150" height="300" fill="#FCF3CF" stroke="#F1C40F" stroke-width="1.5"/>
+      <text x="325" y="110" font-family="Inter, sans-serif" font-size="12" font-weight="800" fill="#7D6608" text-anchor="middle">CRZ-II</text>
+      <text x="325" y="130" font-family="Inter, sans-serif" font-size="9" font-weight="700" fill="#B7950B" text-anchor="middle">Urban Built-Up Areas</text>
+      <text x="325" y="150" font-family="Inter, sans-serif" font-size="8" fill="#7D6608" text-anchor="middle">Municipal Limits</text>
+      <text x="325" y="165" font-family="Inter, sans-serif" font-size="8" fill="#7D6608" text-anchor="middle">FSI Permitted Landward</text>
+
+      <!-- CRZ-III Rural Undeveloped (NDZ 50m / 200m) -->
+      <rect x="400" y="50" width="220" height="300" fill="#EAFAF1" stroke="#2ECC71" stroke-width="1.5"/>
+      <text x="510" y="110" font-family="Inter, sans-serif" font-size="12" font-weight="800" fill="#1E8449" text-anchor="middle">CRZ-III (RURAL)</text>
+      <text x="510" y="130" font-family="Inter, sans-serif" font-size="9" font-weight="700" fill="#27AE60" text-anchor="middle">Rural Coastal Settlements</text>
+      <text x="510" y="150" font-family="Inter, sans-serif" font-size="8" fill="#145A32" text-anchor="middle">NDZ: 50m for Densely Populated (CRZ-III A)</text>
+      <text x="510" y="165" font-family="Inter, sans-serif" font-size="8" fill="#145A32" text-anchor="middle">NDZ: 200m for Others (CRZ-III B)</text>
+    </g>
+  </g>
+
+  <!-- Right: Coastal Compliance Metrics -->
+  <g transform="translate(770, 150)">
+    <rect width="370" height="470" rx="16" fill="#FFFFFF" stroke="#DEE2E6" stroke-width="1.5"/>
+    <rect width="370" height="45" rx="16" fill="#EAF2FA"/>
+    <text x="20" y="28" font-family="Inter, sans-serif" font-size="13" font-weight="800" fill="#1A5276">COASTAL LAND MONITORING</text>
+
+    <g transform="translate(20, 65)">
+      <rect width="330" height="80" rx="10" fill="#E8F8F5" stroke="#1ABC9C" stroke-width="1"/>
+      <text x="15" y="28" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#16A085">India Total Coastline Monitored</text>
+      <text x="15" y="55" font-family="Inter, sans-serif" font-size="22" font-weight="900" fill="#117864">7,516.6 km</text>
+      <text x="315" y="55" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#117864" text-anchor="end">9 States + 2 UTs</text>
+
+      <g transform="translate(0, 95)">
+        <rect width="330" height="80" rx="10" fill="#D5F5E3" stroke="#27AE60" stroke-width="1"/>
+        <text x="15" y="28" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#196F3D">Mangrove Cover Geo-Tagged</text>
+        <text x="15" y="55" font-family="Inter, sans-serif" font-size="22" font-weight="900" fill="#145A32">4,992 sq km</text>
+        <text x="315" y="55" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#145A32" text-anchor="end">+17 sq km YoY</text>
+      </g>
+
+      <g transform="translate(0, 190)">
+        <rect width="330" height="150" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+        <text x="15" y="25" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#1A5276">GeoAI Encroachment Sentinel</text>
+        <text x="15" y="48" font-family="Inter, sans-serif" font-size="10" fill="#6C757D">Sentinel-2 and Cartosat satellite change</text>
+        <text x="15" y="65" font-family="Inter, sans-serif" font-size="10" fill="#6C757D">detection flags unauthorized land reclamation</text>
+        <text x="15" y="82" font-family="Inter, sans-serif" font-size="10" fill="#6C757D">within 50m of High Tide Line within 48 hours.</text>
+        <text x="15" y="112" font-family="Inter, sans-serif" font-size="11" font-weight="800" fill="#1E8449">Active Alerts: 0 Unresolved Violations</text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="legalBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2C0812"/>
+      <stop offset="60%" stop-color="#4A0E1C"/>
+      <stop offset="100%" stop-color="#6B1D2F"/>
+    </linearGradient>
+    <linearGradient id="goldAcc" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F1C40F"/>
+      <stop offset="100%" stop-color="#F9E79F"/>
+    </linearGradient>
+    <linearGradient id="cardGradL" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#F8FAFC" stop-opacity="0.9"/>
+    </linearGradient>
+    <filter id="lShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="15" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="800" fill="url(#legalBg)"/>
+
+  <!-- Subtle scales of justice watermark -->
+  <g transform="translate(460, 200)" opacity="0.08" stroke="#FFFFFF" stroke-width="2" fill="none">
+    <line x1="0" y1="-80" x2="0" y2="80"/>
+    <line x1="-70" y1="-50" x2="70" y2="-50"/>
+    <!-- Left pan -->
+    <path d="M -70,-50 L -90,0 L -50,0 Z"/>
+    <!-- Right pan -->
+    <path d="M 70,-50 L 50,0 L 90,0 Z"/>
+  </g>
+
+  <!-- Top Institutional Bar -->
+  <g transform="translate(50, 45)">
+    <rect x="0" y="0" width="8" height="34" rx="4" fill="#FF9933"/>
+    <rect x="0" y="11" width="8" height="12" fill="#FFFFFF"/>
+    <rect x="0" y="23" width="8" height="11" rx="4" fill="#138808"/>
+    
+    <text x="22" y="16" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#E2E8F0" letter-spacing="1.5">NATIONAL LAW UNIVERSITY • DEPT. OF JUSTICE • MoRD</text>
+    <text x="22" y="32" font-family="'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="600" fill="url(#goldAcc)" letter-spacing="1">LAND GOVERNANCE &amp; JUDICIAL REFORM INITIATIVE</text>
+  </g>
+
+  <!-- Badge -->
+  <g transform="translate(50, 115)">
+    <rect width="180" height="26" rx="4" fill="url(#goldAcc)"/>
+    <text x="14" y="18" font-family="'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="800" fill="#2C0812" letter-spacing="0.8">JUDICIAL REVIEW REPORT</text>
+    <text x="200" y="18" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#FCA5A5">VOL. VIII • 2024</text>
+  </g>
+
+  <!-- Title & Subtitle -->
+  <g transform="translate(50, 180)">
+    <text x="0" y="36" font-family="'Segoe UI', Roboto, sans-serif" font-size="34" font-weight="900" fill="#FFFFFF" letter-spacing="-0.5">Expediting Land</text>
+    <text x="0" y="78" font-family="'Segoe UI', Roboto, sans-serif" font-size="34" font-weight="900" fill="#F8FAFC" letter-spacing="-0.5">Dispute Resolution</text>
+    <text x="0" y="120" font-family="'Segoe UI', Roboto, sans-serif" font-size="30" font-weight="900" fill="url(#goldAcc)" letter-spacing="-0.5">ADR &amp; Revenue Court Reforms</text>
+
+    <text x="0" y="160" font-family="'Segoe UI', Roboto, sans-serif" font-size="13.5" font-weight="400" fill="#FECDD3" width="500">
+      <tspan x="0" dy="0">Empirical Analysis of 1.4 Million Title Litigations Across UP,</tspan>
+      <tspan x="0" dy="22">Bihar, Rajasthan &amp; MP: Measuring Impact of National Lok Adalats</tspan>
+    </text>
+  </g>
+
+  <!-- Central Visual Infographic Card -->
+  <g transform="translate(50, 385)" filter="url(#lShadow)">
+    <rect width="500" height="250" rx="12" fill="url(#cardGradL)" stroke="#CBD5E1" stroke-width="1.5"/>
+
+    <rect x="0" y="0" width="500" height="34" rx="12" fill="#F1F5F9"/>
+    <text x="20" y="22" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#6B1D2F">CASE CLEARANCE RATE &amp; DURATION BEFORE VS AFTER ADR</text>
+
+    <!-- Visual Benchmarks -->
+    <g transform="translate(30, 55)">
+      <!-- Traditional Revenue Court -->
+      <g transform="translate(0, 0)">
+        <rect width="210" height="95" rx="8" fill="#FFF1F2" stroke="#FDA4AF" stroke-width="1"/>
+        <text x="16" y="24" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#9F1239">Standard Revenue Court</text>
+        <text x="16" y="55" font-family="'Segoe UI', Roboto, sans-serif" font-size="26" font-weight="900" fill="#BE123C">4.8 Years</text>
+        <text x="16" y="74" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#881337">Average pendency duration</text>
+        <text x="16" y="87" font-family="'Segoe UI', Roboto, sans-serif" font-size="9" fill="#9F1239">Clearance rate: 18.2% per annum</text>
+      </g>
+
+      <!-- Fast-track Lok Adalat + GIS Cadastre -->
+      <g transform="translate(230, 0)">
+        <rect width="210" height="95" rx="8" fill="#ECFDF5" stroke="#6EE7B7" stroke-width="1"/>
+        <text x="16" y="24" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#065F46">Lok Adalat + Drone Cadastre</text>
+        <text x="16" y="55" font-family="'Segoe UI', Roboto, sans-serif" font-size="26" font-weight="900" fill="#047857">1.2 Months</text>
+        <text x="16" y="74" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#064E3B">Mediated settlement timeline</text>
+        <text x="16" y="87" font-family="'Segoe UI', Roboto, sans-serif" font-size="9" fill="#065F46">Settlement finality: 92.4% success</text>
+      </g>
+    </g>
+
+    <!-- Bottom summary tag inside card -->
+    <rect x="20" y="170" width="460" height="64" rx="6" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+    <text x="35" y="192" font-family="'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="700" fill="#0F172A">Empirical Finding:</text>
+    <text x="35" y="210" font-family="'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="500" fill="#475569">Pre-trial GIS boundary overlay resolves 67% of boundary ambiguity disputes before formal plaint filing,</text>
+    <text x="35" y="223" font-family="'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="500" fill="#475569">saving rural households an estimated ₹3,200 crore annually in legal fees and productive workdays.</text>
+  </g>
+
+  <!-- Authors & Publication Meta -->
+  <g transform="translate(50, 680)">
+    <line x1="0" y1="0" x2="500" y2="0" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="1"/>
+    
+    <text x="0" y="24" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">Working Group Members:</text>
+    <text x="0" y="44" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="400" fill="#FECDD3">Justice (Retd.) S. C. Agrawal • Prof. Ranbir Singh (NLU) • DAKSH Legal Research Cell</text>
+    
+    <g transform="translate(0, 68)">
+      <text x="0" y="14" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="500" fill="#FCA5A5">Law Commission Working Paper No. 284</text>
+      <text x="500" y="14" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#CBD5E1" text-anchor="end">Ministry of Law &amp; Justice Reference</text>
+    </g>
+  </g>
+</svg>
