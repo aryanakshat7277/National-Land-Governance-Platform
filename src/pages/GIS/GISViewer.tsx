@@ -708,7 +708,7 @@ export default function GISViewer() {
   };
 
   return (
-    <div className="p-4 lg:p-6 space-y-3.5 max-w-screen-2xl mx-auto h-[calc(100vh-64px)] flex flex-col bg-[#F8FAFC]">
+    <div className="w-full h-[calc(100vh-65px)] flex flex-col p-3 sm:p-4 space-y-3 bg-[#F8FAFC]">
 
       {/* Top Professional GIS Command Ribbon */}
       <div className="bg-white rounded-xl p-3 border border-slate-200/90 shadow-xs flex flex-col md:flex-row md:items-center justify-between gap-3 shrink-0">

@@ -217,7 +217,7 @@ export function Repository() {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: 20 }}
-      className="w-full max-w-[1680px] mx-auto space-y-8 pb-12"
+      className="w-full px-4 sm:px-6 lg:px-8 py-6 space-y-8 pb-14"
     >
       <DocumentModal doc={selectedDoc} onClose={() => setSelectedDoc(null)} />
 

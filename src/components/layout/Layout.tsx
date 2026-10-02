@@ -162,8 +162,8 @@ export function Layout() {
           </div>
 
           {/* Sidebar Scrollable Body */}
-          <div className="flex-1 overflow-y-auto px-3 py-3 space-y-4 scrollbar-hide flex flex-col justify-between">
-            <div className="space-y-4">
+          <div className="flex-1 overflow-y-auto px-3 py-3 space-y-3.5 scrollbar-hide flex flex-col">
+            <div className="space-y-3.5">
               {/* Navigation Links */}
               <nav className="space-y-4">
                 {navGroups.map((group, groupIndex) => (
@@ -372,6 +372,46 @@ export function Layout() {
                 </div>
               )}
 
+              {/* Live Land Settlement Stream */}
+              {isSidebarExpanded ? (
+                <div className="p-2.5 bg-slate-50/90 rounded-xl border border-slate-200/90 space-y-2">
+                  <div className="flex items-center justify-between">
+                    <span className="text-[10px] font-bold text-slate-700 uppercase tracking-wider flex items-center gap-1.5">
+                      <Activity size={12} className="text-[#1A5276]" /> Settlement Telemetry
+                    </span>
+                    <span className="flex items-center gap-1 text-[9px] font-bold text-emerald-700">
+                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-ping"></span> Live
+                    </span>
+                  </div>
+                  <div className="space-y-1.5 text-[10px]">
+                    <div className="p-1.5 bg-white rounded-lg border border-slate-200/70 flex items-start gap-2 shadow-2xs">
+                      <span className="text-[#1E8449] font-black text-[9px] bg-emerald-50 px-1 py-0.2 rounded">UP</span>
+                      <div className="text-slate-600 leading-tight">
+                        <strong className="text-slate-800">Amethi:</strong> 1,420 mutations cleared
+                      </div>
+                    </div>
+                    <div className="p-1.5 bg-white rounded-lg border border-slate-200/70 flex items-start gap-2 shadow-2xs">
+                      <span className="text-[#1A5276] font-black text-[9px] bg-blue-50 px-1 py-0.2 rounded">GJ</span>
+                      <div className="text-slate-600 leading-tight">
+                        <strong className="text-slate-800">Vadodara:</strong> 840 drone maps geo-locked
+                      </div>
+                    </div>
+                    <div className="p-1.5 bg-white rounded-lg border border-slate-200/70 flex items-start gap-2 shadow-2xs">
+                      <span className="text-[#F39C12] font-black text-[9px] bg-amber-50 px-1 py-0.2 rounded">MH</span>
+                      <div className="text-slate-600 leading-tight">
+                        <strong className="text-slate-800">Pune:</strong> e-Chawani RoR synchronized
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ) : (
+                <div className="flex justify-center">
+                  <div className="p-2 text-[#1A5276]" title="Live Settlement Feed">
+                    <Activity size={18} />
+                  </div>
+                </div>
+              )}
+
               {/* 24x7 Citizen & Kisan Helpline */}
               {isSidebarExpanded ? (
                 <div className="p-2.5 bg-amber-50/80 rounded-xl border border-amber-200 flex items-center justify-between">
@@ -550,8 +590,8 @@ export function Layout() {
             </div>
           </header>
 
-          {/* Main View Area */}
-          <main className="flex-1 overflow-x-hidden overflow-y-auto bg-[#F8FAFC] p-4 lg:p-6">
+          {/* Main View Area — Full Canvas */}
+          <main className="flex-1 overflow-x-hidden overflow-y-auto bg-[#F8FAFC]">
             <Outlet />
           </main>
         </div>

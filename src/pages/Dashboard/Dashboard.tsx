@@ -144,7 +144,7 @@ export default function Dashboard() {
           </motion.div>
         </div>
 
-        <div className="w-full max-w-[1680px] mx-auto px-3 sm:px-6 lg:px-8 py-6 space-y-8">
+        <div className="w-full px-4 sm:px-6 lg:px-8 py-6 space-y-8">
           
           {/* Hero Section — 100% Crisp Executive Government Light Theme */}
           <div className="relative bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-slate-200/90 overflow-hidden">
